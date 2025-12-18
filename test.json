@@ -1,0 +1,26 @@
+{
+  "name": "Office dresser ",
+  "hardwareId": "00:0b:57:ff:fe:ae:c0:ce-01",
+  "type": "Color light",
+  "modelid": "TRADFRI bulb E27 CWS opal 600lm",
+  "manufacturerName": "IKEA of Sweden",
+  "productName": "Color light",
+  "state": {
+    "on": true,
+    "brightness": 170,
+    "hue": 0,
+    "saturation": 0,
+    "reachable": true
+  },
+  "hub": {
+    "id": "672f1966c885809389327d88",
+    "ipAddress": "192.168.1.179",
+    "name": "Office (192.168.1.179)",
+    "modelId": "Philips hue Personal Wireless Lighting",
+    "softwareVersion": "1.0",
+    "user": {
+      "username": "vnrb9QMZMhSFBjkDfWlQHAq72pH0DXMwWA5zi1PS",
+      "password": "550DEFDA88043DDE96F9F71FE79347CF"
+    }
+  }
+}

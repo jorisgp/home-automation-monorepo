@@ -7,27 +7,37 @@
   "targets": {
     "serve": {
       "executor": "@nx/js:node",
-      "defaultConfiguration": "development",
-      "dependsOn": [
-        "build"
-      ],
+      "defaultConfiguration": "dev",
+      "dependsOn": ["build"],
       "options": {
         "buildTarget": "home-automation-api:build",
         "runBuildTargetDependencies": false
       },
       "configurations": {
-        "development": {
-          "buildTarget": "home-automation-api:build:development"
+        "dev": {
+          "buildTarget": "home-automation-api:build:dev",
+          "watch": true
         },
-        "production": {
-          "buildTarget": "home-automation-api:build:production"
+        "prd": {
+          "buildTarget": "home-automation-api:build:prd"
         }
       }
     },
+
+    "docker-db": {
+      "executor": "nx:run-commands",
+      "options": {
+        "commands": [
+          "open -a Docker",
+          "docker build -f ./apps/home-automation-api/db/Dockerfile . -t home_automation_api_mongo:0.1",
+          "docker run --detach --name=home_automation_api_mongo --publish 27017:27017 home_automation_api_mongo:0.1"
+        ],
+        "parallel": false
+      }
+    },
+
     "docker-build": {
-      "dependsOn": [
-        "build"
-      ],
+      "dependsOn": ["build"],
       "command": "docker build -f apps/home-automation-api/Dockerfile . -t home-automation-api"
     }
   }
