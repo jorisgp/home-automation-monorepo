@@ -12,4 +12,5 @@ import { LightRepositoryService } from './service/light-repository.service';
   providers: [LightRepositoryService],
   exports: [LightRepositoryService],
 })
-export class LightModule {}
+export class LightRepositoryModule {}
+export { LightRepositoryService };

@@ -9,21 +9,21 @@ export class HubRestService {
 
   constructor(private readonly hubDomainService: HubDomainService) {}
 
-  async find() {
-    this.logger.log(``, this.find.name);
-    const hubBoList = await this.hubDomainService.findHub();
+  async findAll() {
+    this.logger.log(``, this.findAll.name);
+    const hubBoList = await this.hubDomainService.findAll();
     return hubBoList.map(HubRestMapper.toDto);
+  }
+
+  async find(hubId: string) {
+    this.logger.log(`hubId: ${hubId}`, this.find.name);
+    const hubBoList = await this.hubDomainService.find(hubId);
+    return HubRestMapper.toDto(hubBoList);
   }
 
   async connect() {
     this.logger.log(``, this.connect.name);
-    await this.hubDomainService.connectToHub();
-    return;
-  }
-
-  async findHubsLights() {
-    this.logger.log(``, this.connect.name);
-    await this.hubDomainService.getAllLights();
+    await this.hubDomainService.connect();
     return;
   }
 }

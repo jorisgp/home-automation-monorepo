@@ -1,4 +1,4 @@
-import { LightEntity } from 'apps/home-automation-api/src/rest/repository/modules/light/entity/light.entity';
+import { LightEntity } from 'apps/home-automation-api/src/repository/module/light/entity/light.entity';
 import { ObjectId } from 'mongodb';
 import { LightBo } from '../bo/light.bo';
 
@@ -16,7 +16,6 @@ export class LightEntityMapper {
     lightEntity.modelid = lightBo.modelid;
     lightEntity.productName = lightBo.productName;
     lightEntity.hardwareId = lightBo.hardwareId;
-    lightEntity.state = lightBo.state as any;
     return lightEntity;
   }
 
@@ -32,7 +31,6 @@ export class LightEntityMapper {
     lightBo.type = lightEntity.type;
     lightBo.modelid = lightEntity.modelid;
     lightBo.productName = lightEntity.productName;
-    lightBo.state = lightEntity.state as any;
     lightBo.hardwareId = lightEntity.hardwareId;
 
     return lightBo;

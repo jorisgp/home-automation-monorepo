@@ -1,8 +1,6 @@
 import { Injectable } from '@nestjs/common';
 import { HaaLogger } from 'apps/home-automation-api/src/common/logger/haa-logger';
 import { HubBo } from 'apps/home-automation-api/src/domain/module/hub/bo/hub.bo';
-import { LightBo } from 'apps/home-automation-api/src/domain/module/light/bo/light.bo';
-import { LightStateBo } from 'apps/home-automation-api/src/domain/module/state/bo/state.bo';
 import { HueBridgeMapper } from '../../mapper/hue-bridge.mapper';
 import { HueLightMapper } from '../../mapper/hue-light.mapper';
 import { HueDiscoveryService } from '../hue-discovery/hue-discovery.service';
@@ -17,19 +15,17 @@ export class HueService {
     private hueLightService: HueLightService
   ) {}
 
-  async getBridges(): Promise<HubBo[]> {
+  async getBridges() {
     this.logger.debug(``, this.getBridges.name);
-    const results = await this.hueDiscoveryService.getBridges();
-    return results.map(HueBridgeMapper.readBridgeDtoToBridgeBo);
+    return await this.hueDiscoveryService.getBridges();
   }
 
-  async getLocalBridges(): Promise<HubBo[]> {
+  async getLocalBridges() {
     this.logger.debug(``, this.getBridges.name);
-    const results = await this.hueDiscoveryService.getLocalBridges();
-    return results.map(HueBridgeMapper.readBridgeDtoToBridgeBo);
+    return await this.hueDiscoveryService.getLocalBridges();
   }
 
-  async createBridgeUsers(): Promise<HubBo[]> {
+  async createBridgeUsers() {
     this.logger.debug(``, this.getBridges.name);
     const results = await this.hueDiscoveryService.discoverAndCreateUser();
     this.logger.debug(
@@ -39,7 +35,17 @@ export class HueService {
     return results?.map((dto) => HueBridgeMapper.readBridgeDtoToBridgeBo(dto));
   }
 
-  async getLights(hubBo: HubBo): Promise<LightBo[]> {
+  async getBridgeDetails() {
+    this.logger.debug(``, this.getBridgeDetails.name);
+    const results = await this.hueDiscoveryService.getLocalBridges();
+    this.logger.debug(
+      `results: ${JSON.stringify(results)}`,
+      this.getBridgeDetails.name
+    );
+    return results;
+  }
+
+  async getLights(hubBo: HubBo) {
     this.logger.debug(``, this.getLights.name);
     const results = await this.hueLightService.getAllLights({
       ipAddress: hubBo.ipAddress,
@@ -58,30 +64,30 @@ export class HueService {
     return resultBoList;
   }
 
-  async updateLightState(
-    lightBo: LightBo,
-    lightStateBo: LightStateBo
-  ): Promise<LightBo> {
-    this.logger.debug(
-      `lightBo: ${JSON.stringify(lightBo)} lightStateBo: ${JSON.stringify(
-        lightStateBo
-      )}`,
-      this.updateLightState.name
-    );
+  // async updateLightState(
+  //   lightBo: LightBo,
+  //   lightStateBo: LightStateBo
+  // ): Promise<LightBo> {
+  //   this.logger.debug(
+  //     `lightBo: ${JSON.stringify(lightBo)} lightStateBo: ${JSON.stringify(
+  //       lightStateBo
+  //     )}`,
+  //     this.updateLightState.name
+  //   );
 
-    const authenticationDto = {
-      ipAddress: lightBo.hub.ipAddress,
-      username: lightBo.hub.user?.username,
-    };
+  //   const authenticationDto = {
+  //     ipAddress: lightBo.hub.ipAddress,
+  //     username: lightBo.hub.user?.username,
+  //   };
 
-    const updateLightStateDto = HueLightMapper.toStateDto(lightStateBo);
+  //   const updateLightStateDto = HueLightMapper.toStateDto(lightStateBo);
 
-    const readLightDto = await this.hueLightService.updateLightState(
-      lightBo.lightId,
-      updateLightStateDto,
-      authenticationDto
-    );
+  //   const readLightDto = await this.hueLightService.updateLightState(
+  //     lightBo.lightId,
+  //     updateLightStateDto,
+  //     authenticationDto
+  //   );
 
-    return HueLightMapper.toBo(readLightDto, lightBo.hub);
-  }
+  //   return HueLightMapper.toBo(readLightDto, lightBo.hub);
+  // }
 }

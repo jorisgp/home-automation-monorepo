@@ -10,4 +10,5 @@ import { HubRepositoryService } from './service/hub-repository.service';
   providers: [HubRepositoryService],
   exports: [HubRepositoryService],
 })
-export class HubModule {}
+export class HubRepositoryModule {}
+export { HubRepositoryService };

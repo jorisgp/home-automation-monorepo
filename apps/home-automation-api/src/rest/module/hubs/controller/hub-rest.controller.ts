@@ -1,8 +1,10 @@
-import { Controller, Get, Put } from '@nestjs/common';
+import { Controller, Get, Param, Put } from '@nestjs/common';
 import { ApiResponse, ApiTags } from '@nestjs/swagger';
 import { HaaLogger } from 'apps/home-automation-api/src/common/logger/haa-logger';
-import { Resource } from 'apps/home-automation-api/src/rest/constants/controller.constants';
+import { Resource } from 'apps/home-automation-api/src/rest/enum/resource.enum';
 import { HttpStatusCode } from 'axios';
+
+import { IdParam, IdParamUrl } from '../../../enum/id-params.enum';
 import { ReadHubDto } from '../dto/read-hub.dto';
 import { HubRestService } from '../service/hub-rest.service';
 
@@ -30,8 +32,19 @@ export class HubRestController {
     type: ReadHubDto,
     isArray: true,
   })
-  getHubs() {
-    this.logger.verbose(``, this.getHubs.name);
-    return this.hubRestService.find();
+  findAll() {
+    this.logger.verbose(``, this.findAll.name);
+    return this.hubRestService.findAll();
+  }
+
+  @Get(`${Resource.HUBS}/${IdParamUrl.HUB_ID}`)
+  @ApiResponse({
+    status: HttpStatusCode.Found,
+    type: ReadHubDto,
+    isArray: true,
+  })
+  find(@Param(IdParam.HUB_ID) hubId: string) {
+    this.logger.verbose(`hubId: ${hubId}`, this.find.name);
+    return this.hubRestService.find(hubId);
   }
 }

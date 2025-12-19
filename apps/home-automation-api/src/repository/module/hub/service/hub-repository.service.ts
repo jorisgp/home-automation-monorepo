@@ -1,7 +1,7 @@
 import { Injectable } from '@nestjs/common';
 import { InjectModel } from '@nestjs/mongoose';
 import { HaaLogger } from 'apps/home-automation-api/src/common/logger/haa-logger';
-import { Model } from 'mongoose';
+import { Model, Types } from 'mongoose';
 import { HubDocument, HubEntity } from '../entity/hub.entity';
 
 @Injectable()
@@ -30,7 +30,7 @@ export class HubRepositoryService {
     return this.hubModel.find();
   }
 
-  find(hubEntity: HubEntity): Promise<HubDocument[]> {
+  find(hubEntity: Partial<HubEntity>): Promise<HubDocument[]> {
     this.logger.debug(
       `hubEntity: ${JSON.stringify(hubEntity)}`,
       this.find.name
@@ -39,6 +39,11 @@ export class HubRepositoryService {
       name: hubEntity.name,
       version: hubEntity.version,
     });
+  }
+
+  findOne(id: Types.ObjectId): Promise<HubDocument> {
+    this.logger.debug(`id: ${id}`, this.findOne.name);
+    return this.hubModel.findOne(id);
   }
 
   async findOrCreate(hubEntity: HubEntity) {

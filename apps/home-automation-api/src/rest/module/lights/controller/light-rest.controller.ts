@@ -1,7 +1,7 @@
 import { Controller, Get, HttpStatus, Param } from '@nestjs/common';
 import { ApiResponse, ApiTags } from '@nestjs/swagger';
 import { HaaLogger } from 'apps/home-automation-api/src/common/logger/haa-logger';
-import { Resource } from 'apps/home-automation-api/src/rest/constants/controller.constants';
+import { Resource } from 'apps/home-automation-api/src/rest/enum/resource.enum';
 import { ReadLightDto } from '../dto/read-light.dto';
 import { LightRestService } from '../service/light-rest.service';
 

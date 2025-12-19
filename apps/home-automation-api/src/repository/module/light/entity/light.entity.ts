@@ -44,9 +44,6 @@ export class LightEntity extends BaseEntity {
   @Prop()
   productName: string;
 
-  @Prop()
-  state: LightStateEntity;
-
   @Prop({
     type: SchemaTypes.ObjectId,
     ref: HubEntity.name,

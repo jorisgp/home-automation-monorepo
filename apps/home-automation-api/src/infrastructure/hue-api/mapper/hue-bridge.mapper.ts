@@ -2,8 +2,8 @@ import { HaaLogger } from 'apps/home-automation-api/src/common/logger/haa-logger
 import { HubUserBo } from 'apps/home-automation-api/src/domain/module/hub/bo/hub-user.bo';
 import { HubBo } from 'apps/home-automation-api/src/domain/module/hub/bo/hub.bo';
 import { ReadBridgeDetailedDto } from '../dto/read-bridge-detailed.dto';
-import { ReadBridgeUserDto } from '../dto/read-bridge-user.dto';
 import { ReadBridgeDto } from '../dto/read-bridge.dto';
+import { ReadBridgeUserDto } from '../service/hue-discovery/dto/read-bridge-user.dto';
 
 export class HueBridgeMapper {
   private static logger = new HaaLogger(HueBridgeMapper.name);
@@ -13,7 +13,7 @@ export class HueBridgeMapper {
   ): HubBo {
     HueBridgeMapper.logger.debug(
       `dto: ${JSON.stringify(dto)}`,
-      this.readBridgeDtoToBridgeBo.name
+      HueBridgeMapper.readBridgeDtoToBridgeBo.name
     );
 
     const bridgeBo = new HubBo();

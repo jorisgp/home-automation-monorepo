@@ -5,12 +5,15 @@ import * as hueApiService from 'node-hue-api';
 import { AuthenticationDto } from '../../dto/authentication.dto';
 import { ReadLightDto } from '../../dto/light/read-light.dto';
 import { UpdateLightStateDto } from '../../dto/light/update-light-state.dto';
+import { HueApiProviderService } from '../hue-api-provider/hue-api-provider..service';
 
 const LightState = hueApiService.v3.lightStates.LightState;
 
 @Injectable()
 export class HueLightService {
   private readonly logger = new HaaLogger(HueLightService.name);
+
+  constructor(private hueApiProviderService: HueApiProviderService) {}
 
   async getAllLights(
     authenticationDto: AuthenticationDto
@@ -19,7 +22,7 @@ export class HueLightService {
       `authenticationDto: ${JSON.stringify(authenticationDto)}`,
       this.getAllLights.name
     );
-    const authenticatedApi = await this._getAuthenticatedApi(authenticationDto);
+    const authenticatedApi = await this.getAuthenticatedApi(authenticationDto);
     return await authenticatedApi.lights.getAll();
   }
 
@@ -34,20 +37,21 @@ export class HueLightService {
       )}`,
       this.updateLightState.name
     );
-    const authenticatedApi = await this._getAuthenticatedApi(authenticationDto);
+    const authenticatedApi = await this.getAuthenticatedApi(authenticationDto);
     const state = new LightState().populate(toPlainObject(updateLightStateDto));
     this.logger.debug(`state: ${state}`, this.updateLightState.name);
     const light = authenticatedApi.lights.setLightState(lightId, state);
     return light as unknown as ReadLightDto;
   }
 
-  private async _getAuthenticatedApi(authenticationDto: AuthenticationDto) {
+  async getAuthenticatedApi(authenticationDto: AuthenticationDto) {
     this.logger.debug(
       `authenticationDto: ${JSON.stringify(authenticationDto)}`,
-      this._getAuthenticatedApi.name
+      this.getAuthenticatedApi.name
     );
-    return await hueApiService.api
-      .createLocal(authenticationDto.ipAddress)
-      .connect(authenticationDto.username);
+    return await this.hueApiProviderService.getApi(
+      authenticationDto.ipAddress,
+      authenticationDto.username
+    );
   }
 }

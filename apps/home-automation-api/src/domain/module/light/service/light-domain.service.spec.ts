@@ -2,7 +2,7 @@ import { Test, TestingModule } from '@nestjs/testing';
 import { HueDiscoveryService } from 'apps/home-automation-api/src/infrastructure/hue-api/service/hue-discovery/hue-discovery.service';
 import { HueLightService } from 'apps/home-automation-api/src/infrastructure/hue-api/service/hue-light/hue-light.service';
 import { HueService } from 'apps/home-automation-api/src/infrastructure/hue-api/service/hue/hue.service';
-import { LightRepositoryService } from 'apps/home-automation-api/src/rest/repository/modules/light/service/light-repository.service';
+import { LightRepositoryService } from 'apps/home-automation-api/src/repository';
 import { LightDomainService } from './light-domain.service';
 
 describe('LightResourceService', () => {

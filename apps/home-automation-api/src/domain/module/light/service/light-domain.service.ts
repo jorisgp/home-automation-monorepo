@@ -1,7 +1,7 @@
 import { Injectable } from '@nestjs/common';
 import { HaaLogger } from 'apps/home-automation-api/src/common/logger/haa-logger';
 import { HueService } from 'apps/home-automation-api/src/infrastructure/hue-api/service/hue/hue.service';
-import { LightRepositoryService } from 'apps/home-automation-api/src/rest/repository/modules/light/service/light-repository.service';
+import { LightRepositoryService } from 'apps/home-automation-api/src/repository';
 import { ObjectId } from 'mongodb';
 import { LightStateBo } from '../../state/bo/state.bo';
 import { LightBo } from '../bo/light.bo';
@@ -15,6 +15,35 @@ export class LightDomainService {
     private readonly hueService: HueService,
     private readonly lightRepisoryService: LightRepositoryService
   ) {}
+
+  async getAllLights() {
+    this.logger.debug(``, this.getAllLights.name);
+    const allHubs = await this.hubRpositoryService.findAll();
+
+    const promiseLightResult = allHubs.map(
+      async (hub) => await this.hueService.getLights(HubEntityMapper.toBo(hub))
+    );
+
+    const lightResult = await Promise.all(promiseLightResult);
+    const flatLightResult = lightResult.flat();
+
+    this._saveLights(flatLightResult);
+  }
+
+  private async _saveLights(lightBoList: LightBo[]) {
+    this.logger.debug(
+      `lightBoList: ${JSON.stringify(lightBoList)}`,
+      this._saveLights.name
+    );
+    this.logger.debug(``, this._saveLights.name);
+    const promiseArray = lightBoList.map((lightBo) =>
+      this.lightRepisoryService.findOrCreate(
+        LightEntityMapper.toEntity(lightBo)
+      )
+    );
+
+    return await Promise.all(promiseArray);
+  }
 
   async findOne(id: string) {
     this.logger.debug(``, this.findOne.name);

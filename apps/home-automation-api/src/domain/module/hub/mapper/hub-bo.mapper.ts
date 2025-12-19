@@ -2,7 +2,7 @@ import { ObjectId } from 'mongodb';
 import {
   HubEntity,
   HubUserEntity,
-} from '../../../../rest/repository/modules/hub/entity/hub.entity';
+} from '../../../../repository/module/hub/entity/hub.entity';
 import { HubUserBo } from '../bo/hub-user.bo';
 import { HubBo } from '../bo/hub.bo';
 

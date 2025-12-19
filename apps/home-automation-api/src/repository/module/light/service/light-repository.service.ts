@@ -68,7 +68,6 @@ export class LightRepositoryService {
       foundLightEntity.type = lightEntity.type;
       foundLightEntity.modelid = lightEntity.modelid;
       foundLightEntity.productName = lightEntity.productName;
-      foundLightEntity.state = lightEntity.state;
       foundLightEntity.hub = lightEntity.hub;
       return foundLightEntity.save();
     }
