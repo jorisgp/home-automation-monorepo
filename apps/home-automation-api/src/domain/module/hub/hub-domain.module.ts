@@ -1,13 +1,10 @@
 import { Module } from '@nestjs/common';
-import {
-  HubRepositoryModule,
-  LightRepositoryModule,
-} from 'apps/home-automation-api/src/repository';
-import { InfrastructureModule } from '../../../infrastructure/infrastructure.module';
+import { HueDiscoveryModule } from 'apps/home-automation-api/src/infrastructure/hue-api/module/hue-discovery';
+import { HubRepositoryModule } from 'apps/home-automation-api/src/repository';
 import { HubDomainService } from './service/hub-domain.service';
 
 @Module({
-  imports: [InfrastructureModule, HubRepositoryModule, LightRepositoryModule],
+  imports: [HueDiscoveryModule, HubRepositoryModule],
   providers: [HubDomainService],
   exports: [HubDomainService],
 })

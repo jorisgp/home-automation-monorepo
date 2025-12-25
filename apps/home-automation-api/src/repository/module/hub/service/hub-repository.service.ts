@@ -46,6 +46,16 @@ export class HubRepositoryService {
     return this.hubModel.findOne(id);
   }
 
+  deleteOne(id: Types.ObjectId) {
+    this.logger.debug(`id: ${id}`, this.deleteOne.name);
+    return this.hubModel.findByIdAndDelete(id);
+  }
+
+  async deleteAll() {
+    this.logger.debug(``, this.deleteAll.name);
+    return this.hubModel.deleteMany({});
+  }
+
   async findOrCreate(hubEntity: HubEntity) {
     this.logger.debug(
       `hubEntity: ${JSON.stringify(hubEntity)}`,

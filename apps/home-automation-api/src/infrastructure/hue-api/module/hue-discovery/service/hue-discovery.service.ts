@@ -3,11 +3,12 @@ import { HaaLogger } from 'apps/home-automation-api/src/common/logger/haa-logger
 import { plainToClass } from 'class-transformer';
 import * as hueApiService from 'node-hue-api';
 
-import { ReadBridgeUserDto } from './dto/read-bridge-user.dto';
-
-import { ReadAuthorizedBridgeDto } from './dto/read-authorized-bridge.dto';
-import { ReadBridgeDto } from './dto/read-bridge.dto';
-import { ReadLocalBridgeDto } from './dto/read-local-bridge.dto';
+import { DiscoveryType } from 'apps/home-automation-api/src/infrastructure/hue-api/module/hue-discovery/enum/discovery-type.enum';
+import { ReadAuthorizedBridgeDto } from '../dto/read-authorized-bridge.dto';
+import { ReadBridgeUserDto } from '../dto/read-bridge-user.dto';
+import { ReadBridgeDto } from '../dto/read-bridge.dto';
+import { ReadLocalBridgeDto } from '../dto/read-local-bridge.dto';
+import { HueErrorType } from '../enum';
 
 @Injectable()
 export class HueDiscoveryService {
@@ -15,27 +16,16 @@ export class HueDiscoveryService {
   private readonly APP_NAME = 'home-automation-api';
   private readonly DEVICE_NAME = 'home-automation-api-device';
 
-  async getBridges(): Promise<ReadBridgeDto[]> {
-    this.logger.debug(``, this.getBridges.name);
-    let results = await hueApiService.discovery.nupnpSearch();
-    return results.map((readBridgeDto) =>
-      plainToClass(ReadBridgeDto, readBridgeDto)
+  async getBridgesAndCreateUser(
+    discoveryType = DiscoveryType.MDNS
+  ): Promise<ReadAuthorizedBridgeDto[]> {
+    this.logger.debug(
+      `discoveryType: ${discoveryType}`,
+      this.getBridgesAndCreateUser.name
     );
-  }
+    const readBridgeDtoList = await this.getBridges(discoveryType);
 
-  async getLocalBridges(): Promise<ReadLocalBridgeDto[]> {
-    this.logger.debug(``, this.getLocalBridges.name);
-    let results = await hueApiService.discovery.mdnsSearch();
-    return results?.map((readBridgeDto) =>
-      plainToClass(ReadLocalBridgeDto, readBridgeDto)
-    );
-  }
-
-  async discoverAndCreateUser(): Promise<ReadAuthorizedBridgeDto[]> {
-    this.logger.debug(``, this.discoverAndCreateUser.name);
-    const readBridgeDtoList = await this.getLocalBridges();
-
-    return await Promise.all(
+    const result = await Promise.all(
       readBridgeDtoList?.map(async (readBridgeDto) => {
         const readAuthorizedBridgeDto = new ReadAuthorizedBridgeDto();
         readAuthorizedBridgeDto.bridge = readBridgeDto;
@@ -44,6 +34,35 @@ export class HueDiscoveryService {
         );
         return readAuthorizedBridgeDto;
       })
+    );
+    return result?.filter((res) => res.user !== undefined);
+  }
+
+  async getBridges(
+    discoveryType = DiscoveryType.MDNS
+  ): Promise<ReadBridgeDto[] | ReadLocalBridgeDto[]> {
+    this.logger.debug(`discoveryType: ${discoveryType}`, this.getBridges.name);
+    switch (discoveryType) {
+      case DiscoveryType.MUPNP:
+        return this._getBridgesNupnp();
+      case DiscoveryType.MDNS:
+        return this._getBridgesMdns();
+    }
+  }
+
+  private async _getBridgesNupnp(): Promise<ReadBridgeDto[]> {
+    this.logger.debug(``, this._getBridgesNupnp.name);
+    let results = await hueApiService.discovery.nupnpSearch();
+    return results.map((readBridgeDto) =>
+      plainToClass(ReadBridgeDto, readBridgeDto)
+    );
+  }
+
+  private async _getBridgesMdns(): Promise<ReadLocalBridgeDto[]> {
+    this.logger.debug(``, this._getBridgesMdns.name);
+    let results = await hueApiService.discovery.mdnsSearch();
+    return results?.map((readBridgeDto) =>
+      plainToClass(ReadLocalBridgeDto, readBridgeDto)
     );
   }
 
@@ -92,8 +111,4 @@ export class HueDiscoveryService {
       return;
     }
   }
-}
-
-enum HueErrorType {
-  LINK_BUTTON_NOT_PRESSED = 101,
 }

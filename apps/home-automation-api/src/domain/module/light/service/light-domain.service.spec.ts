@@ -1,5 +1,5 @@
 import { Test, TestingModule } from '@nestjs/testing';
-import { HueDiscoveryService } from 'apps/home-automation-api/src/infrastructure/hue-api/service/hue-discovery/hue-discovery.service';
+import { HueDiscoveryService } from 'apps/home-automation-api/src/infrastructure/hue-api/module/hue-discovery/service/hue-discovery.service';
 import { HueLightService } from 'apps/home-automation-api/src/infrastructure/hue-api/service/hue-light/hue-light.service';
 import { HueService } from 'apps/home-automation-api/src/infrastructure/hue-api/service/hue/hue.service';
 import { LightRepositoryService } from 'apps/home-automation-api/src/repository';

@@ -1,7 +1,7 @@
 export enum IdParam {
-  HUB_ID = ':hubId',
-  LIGHT_ID = ':lightId',
-  STATE_ID = ':stateId',
+  HUB_ID = 'hubId',
+  LIGHT_ID = 'lightId',
+  STATE_ID = 'stateId',
 }
 export enum IdParamUrl {
   HUB_ID = ':' + IdParam.HUB_ID,

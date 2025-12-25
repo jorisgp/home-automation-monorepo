@@ -3,6 +3,7 @@ import { HaaLogger } from 'apps/home-automation-api/src/common/logger/haa-logger
 import { HueService } from 'apps/home-automation-api/src/infrastructure/hue-api/service/hue/hue.service';
 import { LightRepositoryService } from 'apps/home-automation-api/src/repository';
 import { ObjectId } from 'mongodb';
+import { HubBoMapper } from '../../hub/mapper/hub-bo.mapper';
 import { LightStateBo } from '../../state/bo/state.bo';
 import { LightBo } from '../bo/light.bo';
 import { LightEntityMapper } from '../mapper/light-bo.mapper';
@@ -18,10 +19,10 @@ export class LightDomainService {
 
   async getAllLights() {
     this.logger.debug(``, this.getAllLights.name);
-    const allHubs = await this.hubRpositoryService.findAll();
+    const allHubs = []; //await this.hubRpositoryService.findAll();
 
     const promiseLightResult = allHubs.map(
-      async (hub) => await this.hueService.getLights(HubEntityMapper.toBo(hub))
+      async (hub) => await this.hueService.getLights(HubBoMapper.toBo(hub))
     );
 
     const lightResult = await Promise.all(promiseLightResult);
@@ -67,10 +68,11 @@ export class LightDomainService {
     let lightEntity = await this.lightRepisoryService.findOne(objectId);
     const lightBo = LightEntityMapper.toBo(lightEntity);
 
-    const updatedLightBo = await this.hueService.updateLightState(
-      lightBo,
-      lightStateBo
-    );
+    const updatedLightBo = null;
+    //   await this.hueService.updateLightState(
+    //   lightBo,
+    //   lightStateBo
+    // );
     let updateEntity = LightEntityMapper.toEntity(updatedLightBo);
     updateEntity = await this.lightRepisoryService.update(
       objectId,
@@ -93,23 +95,23 @@ export class LightDomainService {
 
     const delay = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
 
-    for (let i = 0; i < 100; i++) {
-      await this.hueService.updateLightState(lightBo, {
-        ...lightStateBo,
-        on: true,
-      } as LightStateBo);
-      await delay(LIGHT_INTERVAL);
-      await this.hueService.updateLightState(lightBo, {
-        ...lightStateBo,
-        on: false,
-      } as LightStateBo);
-      await delay(LIGHT_INTERVAL);
-    }
+    // for (let i = 0; i < 100; i++) {
+    //   await this.hueService.updateLightState(lightBo, {
+    //     ...lightStateBo,
+    //     on: true,
+    //   } as LightStateBo);
+    //   await delay(LIGHT_INTERVAL);
+    //   await this.hueService.updateLightState(lightBo, {
+    //     ...lightStateBo,
+    //     on: false,
+    //   } as LightStateBo);
+    //   await delay(LIGHT_INTERVAL);
+    // }
 
     return;
   }
 
-  async updateStateAll(lightStateBo: LightStateBo): Promise<LightBo[]> {
+  async updateStateAll(lightStateBo: LightStateBo): Promise<any> {
     this.logger.debug(
       `lightStateBo: ${JSON.stringify(lightStateBo)}`,
       this.updateStateAll.name
@@ -121,7 +123,7 @@ export class LightDomainService {
 
     const allUpdatedLightsPromise = lightEntityList.map(async (lightEntity) => {
       const lightBo = LightEntityMapper.toBo(lightEntity);
-      await this.hueService.updateLightState(lightBo, lightStateBo);
+      //await this.hueService.updateLightState(lightBo, lightStateBo);
       return await delay(1000);
     });
 
@@ -129,7 +131,7 @@ export class LightDomainService {
 
     const allResetLightsPromise = lightEntityList.map(async (lightEntity) => {
       const lightBo = LightEntityMapper.toBo(lightEntity);
-      return await this.hueService.updateLightState(lightBo, lightBo.state);
+      return; //await this.hueService.updateLightState(lightBo, lightBo.state);
     });
 
     return await Promise.all(allResetLightsPromise);

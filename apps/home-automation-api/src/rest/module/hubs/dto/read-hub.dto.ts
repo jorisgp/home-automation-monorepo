@@ -8,6 +8,9 @@ export class ReadHubDto {
   name: string;
 
   @ApiProperty()
+  uniqueId: string;
+
+  @ApiProperty()
   ipAddress: string;
 
   @ApiProperty()
@@ -15,4 +18,7 @@ export class ReadHubDto {
 
   @ApiProperty()
   softwareVersion: string;
+
+  @ApiProperty()
+  lastSeen: Date;
 }

@@ -1,12 +1,10 @@
+import { HubUserEntity } from 'apps/home-automation-api/src/repository/module/hub/entity/hub-user.entity';
 import { ObjectId } from 'mongodb';
-import {
-  HubEntity,
-  HubUserEntity,
-} from '../../../../repository/module/hub/entity/hub.entity';
+import { HubEntity } from '../../../../repository/module/hub/entity/hub.entity';
 import { HubUserBo } from '../bo/hub-user.bo';
 import { HubBo } from '../bo/hub.bo';
 
-export class HubEntityMapper {
+export class HubBoMapper {
   public static toEntity(hubBo: HubBo): HubEntity {
     if (!hubBo) {
       return;
@@ -17,8 +15,8 @@ export class HubEntityMapper {
     entity.ip = hubBo.ipAddress;
     entity.name = hubBo.name;
     entity.modelId = hubBo.modelId;
-    entity.version = hubBo.softwareVersion;
-    entity.user = HubEntityMapper.toUserEntity(hubBo.user);
+    entity.uniqueId = hubBo.uniqueId;
+    entity.user = HubBoMapper.toUserEntity(hubBo.user);
     return entity;
   }
 
@@ -43,8 +41,9 @@ export class HubEntityMapper {
     bo.ipAddress = entity.ip;
     bo.name = entity.name;
     bo.modelId = entity.modelId;
-    bo.softwareVersion = entity.version;
-    bo.user = HubEntityMapper.toUserBo(entity.user);
+    bo.uniqueId = entity.uniqueId;
+    bo.lastSeen = entity.lastSeen;
+    bo.user = HubBoMapper.toUserBo(entity.user);
     return bo;
   }
 

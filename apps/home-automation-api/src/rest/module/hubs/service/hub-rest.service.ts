@@ -21,6 +21,16 @@ export class HubRestService {
     return HubRestMapper.toDto(hubBoList);
   }
 
+  async deleteAll() {
+    this.logger.log(``, this.deleteAll.name);
+    return await this.hubDomainService.deleteAll();
+  }
+
+  async delete(hubId: string) {
+    this.logger.log(`hubId: ${hubId}`, this.delete.name);
+    return await this.hubDomainService.delete(hubId);
+  }
+
   async connect() {
     this.logger.log(``, this.connect.name);
     await this.hubDomainService.connect();

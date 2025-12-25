@@ -1,5 +1,5 @@
 import { Test, TestingModule } from '@nestjs/testing';
-import { HueDiscoveryService } from '../hue-discovery/hue-discovery.service';
+import { HueDiscoveryService } from '../../module/hue-discovery/service/hue-discovery.service';
 import { HueLightService } from '../hue-light/hue-light.service';
 import { HueService } from './hue.service';
 
