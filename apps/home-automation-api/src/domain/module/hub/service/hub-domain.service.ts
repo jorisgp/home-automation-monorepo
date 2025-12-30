@@ -1,7 +1,6 @@
 import { Injectable } from '@nestjs/common';
 import { HaaLogger } from 'apps/home-automation-api/src/common/logger/haa-logger';
 import { HueDiscoveryService } from 'apps/home-automation-api/src/infrastructure/hue-api/module/hue-discovery';
-import { DiscoveryType } from 'apps/home-automation-api/src/infrastructure/hue-api/module/hue-discovery/enum';
 import { HubRepositoryService } from 'apps/home-automation-api/src/repository/module/hub/service/hub-repository.service';
 import { Types } from 'mongoose';
 import { HubBo } from '../bo/hub.bo';
@@ -52,9 +51,7 @@ export class HubDomainService {
   async connect() {
     this.logger.debug(``, this.connect.name);
     const readAuthorizedBridgeDtoList =
-      await this.hueDiscoveryService.getBridgesAndCreateUser(
-        DiscoveryType.MDNS
-      );
+      await this.hueDiscoveryService.getBridgesAndCreateUser();
 
     const hubBoList = readAuthorizedBridgeDtoList.map(HubInfraBoMapper.toBo);
 

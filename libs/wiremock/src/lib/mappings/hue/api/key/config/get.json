@@ -1,0 +1,10 @@
+{
+  "request": {
+    "urlPathPattern": "/api/[A-Za-z0-9]{20,}/config",
+    "method": "GET"
+  },
+  "response": {
+    "bodyFileName": "hue/api/key/config/get.json",
+    "status": 200
+  }
+}

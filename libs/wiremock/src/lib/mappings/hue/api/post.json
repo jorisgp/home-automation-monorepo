@@ -4,6 +4,8 @@
     "method": "POST"
   },
   "response": {
+    "bodyFileName": "hue/api/post.json",
+    //"bodyFileName": "hue/api/post-error.json",
     "status": 201
   }
 }

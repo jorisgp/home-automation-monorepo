@@ -1,0 +1,3229 @@
+{
+  "lights": {
+    "7": {
+      "state": {
+        "on": false,
+        "bri": 127,
+        "hue": 2769,
+        "sat": 206,
+        "effect": "none",
+        "xy": [0.4445, 0.4067],
+        "alert": "select",
+        "colormode": "xy",
+        "mode": "homeautomation",
+        "reachable": true
+      },
+      "swupdate": {
+        "state": "notupdatable",
+        "lastinstall": "2022-11-16T19:49:53"
+      },
+      "type": "Color light",
+      "name": "Office dresser ",
+      "modelid": "TRADFRI bulb E27 CWS opal 600lm",
+      "manufacturername": "IKEA of Sweden",
+      "productname": "Color light",
+      "capabilities": {
+        "certified": false,
+        "control": { "colorgamuttype": "other" },
+        "streaming": { "renderer": false, "proxy": false }
+      },
+      "config": {
+        "archetype": "tableshade",
+        "function": "decorative",
+        "direction": "omnidirectional"
+      },
+      "uniqueid": "00:0b:57:ff:fe:ae:c0:ce-01",
+      "swversion": "2.3.086"
+    },
+    "8": {
+      "state": {
+        "on": true,
+        "alert": "select",
+        "mode": "homeautomation",
+        "reachable": true
+      },
+      "swupdate": {
+        "state": "noupdates",
+        "lastinstall": "2025-07-03T12:10:43"
+      },
+      "type": "On/Off plug-in unit",
+      "name": "Office plug",
+      "modelid": "LOM007",
+      "manufacturername": "Signify Netherlands B.V.",
+      "productname": "Hue smart plug",
+      "capabilities": {
+        "certified": true,
+        "control": {},
+        "streaming": { "renderer": false, "proxy": false }
+      },
+      "config": {
+        "archetype": "plug",
+        "function": "functional",
+        "direction": "omnidirectional",
+        "startup": { "mode": "powerfail", "configured": true }
+      },
+      "uniqueid": "00:17:88:01:0c:a5:f6:98-0b",
+      "swversion": "1.122.8",
+      "swconfigid": "9D6B28BF",
+      "productid": "Philips-LOM007-1-SPPIUv2"
+    },
+    "10": {
+      "state": {
+        "on": false,
+        "bri": 1,
+        "hue": 0,
+        "sat": 188,
+        "effect": "none",
+        "xy": [0.4426, 0.4058],
+        "ct": 345,
+        "alert": "select",
+        "colormode": "xy",
+        "mode": "homeautomation",
+        "reachable": true
+      },
+      "swupdate": {
+        "state": "notupdatable",
+        "lastinstall": "2023-01-25T17:18:40"
+      },
+      "type": "Extended color light",
+      "name": "Office ceiling spot 1",
+      "modelid": "TRADFRI bulb GU10 CWS 345lm",
+      "manufacturername": "IKEA of Sweden",
+      "productname": "Extended color light",
+      "capabilities": {
+        "certified": false,
+        "control": {
+          "colorgamuttype": "other",
+          "colorgamut": [
+            [0.0, 0.0],
+            [0.0, 0.0],
+            [0.0, 0.0]
+          ],
+          "ct": { "min": 250, "max": 454 }
+        },
+        "streaming": { "renderer": false, "proxy": false }
+      },
+      "config": {
+        "archetype": "singlespot",
+        "function": "mixed",
+        "direction": "omnidirectional"
+      },
+      "uniqueid": "1c:34:f1:ff:fe:78:5e:dd-01",
+      "swversion": "1.0.021"
+    },
+    "11": {
+      "state": {
+        "on": true,
+        "bri": 25,
+        "hue": 0,
+        "sat": 188,
+        "effect": "none",
+        "xy": [0.4426, 0.4058],
+        "ct": 346,
+        "alert": "select",
+        "colormode": "ct",
+        "mode": "homeautomation",
+        "reachable": true
+      },
+      "swupdate": {
+        "state": "notupdatable",
+        "lastinstall": "2023-11-06T12:56:26"
+      },
+      "type": "Extended color light",
+      "name": "Desk light 2",
+      "modelid": "TRADFRI bulb E14 CWS 470lm",
+      "manufacturername": "IKEA of Sweden",
+      "productname": "Extended color light",
+      "capabilities": {
+        "certified": false,
+        "control": {
+          "colorgamuttype": "other",
+          "colorgamut": [
+            [0.0, 0.0],
+            [0.0, 0.0],
+            [0.0, 0.0]
+          ],
+          "ct": { "min": 250, "max": 454 }
+        },
+        "streaming": { "renderer": false, "proxy": false }
+      },
+      "config": {
+        "archetype": "flexiblelamp",
+        "function": "mixed",
+        "direction": "omnidirectional"
+      },
+      "uniqueid": "bc:02:6e:ff:fe:df:d1:4d-01",
+      "swversion": "1.0.021"
+    },
+    "12": {
+      "state": {
+        "on": true,
+        "bri": 31,
+        "hue": 0,
+        "sat": 188,
+        "effect": "none",
+        "xy": [0.4426, 0.4058],
+        "ct": 346,
+        "alert": "select",
+        "colormode": "ct",
+        "mode": "homeautomation",
+        "reachable": true
+      },
+      "swupdate": {
+        "state": "notupdatable",
+        "lastinstall": "2023-11-06T12:58:50"
+      },
+      "type": "Extended color light",
+      "name": "Desk light 1",
+      "modelid": "TRADFRI bulb E14 CWS 470lm",
+      "manufacturername": "IKEA of Sweden",
+      "productname": "Extended color light",
+      "capabilities": {
+        "certified": false,
+        "control": {
+          "colorgamuttype": "other",
+          "colorgamut": [
+            [0.0, 0.0],
+            [0.0, 0.0],
+            [0.0, 0.0]
+          ],
+          "ct": { "min": 250, "max": 454 }
+        },
+        "streaming": { "renderer": false, "proxy": false }
+      },
+      "config": {
+        "archetype": "flexiblelamp",
+        "function": "mixed",
+        "direction": "omnidirectional"
+      },
+      "uniqueid": "28:76:81:ff:fe:90:5a:9b-01",
+      "swversion": "1.0.021"
+    },
+    "13": {
+      "state": {
+        "on": false,
+        "bri": 127,
+        "hue": 0,
+        "sat": 188,
+        "effect": "none",
+        "xy": [0.4426, 0.4058],
+        "ct": 346,
+        "alert": "select",
+        "colormode": "ct",
+        "mode": "homeautomation",
+        "reachable": true
+      },
+      "swupdate": {
+        "state": "notupdatable",
+        "lastinstall": "2023-11-06T15:32:18"
+      },
+      "type": "Extended color light",
+      "name": "Office ceiling spot 4",
+      "modelid": "TRADFRI bulb GU10 CWS 345lm",
+      "manufacturername": "IKEA of Sweden",
+      "productname": "Extended color light",
+      "capabilities": {
+        "certified": false,
+        "control": {
+          "colorgamuttype": "other",
+          "colorgamut": [
+            [0.0, 0.0],
+            [0.0, 0.0],
+            [0.0, 0.0]
+          ],
+          "ct": { "min": 250, "max": 454 }
+        },
+        "streaming": { "renderer": false, "proxy": false }
+      },
+      "config": {
+        "archetype": "singlespot",
+        "function": "mixed",
+        "direction": "omnidirectional"
+      },
+      "uniqueid": "28:76:81:ff:fe:ee:2e:ee-01",
+      "swversion": "1.0.021"
+    },
+    "14": {
+      "state": {
+        "on": false,
+        "bri": 127,
+        "hue": 0,
+        "sat": 188,
+        "effect": "none",
+        "xy": [0.4426, 0.4058],
+        "ct": 345,
+        "alert": "select",
+        "colormode": "xy",
+        "mode": "homeautomation",
+        "reachable": true
+      },
+      "swupdate": {
+        "state": "notupdatable",
+        "lastinstall": "2023-11-06T15:33:56"
+      },
+      "type": "Extended color light",
+      "name": "Office ceiling spot 3",
+      "modelid": "TRADFRI bulb GU10 CWS 345lm",
+      "manufacturername": "IKEA of Sweden",
+      "productname": "Extended color light",
+      "capabilities": {
+        "certified": false,
+        "control": {
+          "colorgamuttype": "other",
+          "colorgamut": [
+            [0.0, 0.0],
+            [0.0, 0.0],
+            [0.0, 0.0]
+          ],
+          "ct": { "min": 250, "max": 454 }
+        },
+        "streaming": { "renderer": false, "proxy": false }
+      },
+      "config": {
+        "archetype": "singlespot",
+        "function": "mixed",
+        "direction": "omnidirectional"
+      },
+      "uniqueid": "30:fb:10:ff:fe:00:74:94-01",
+      "swversion": "1.0.021"
+    },
+    "16": {
+      "state": {
+        "on": false,
+        "bri": 127,
+        "ct": 369,
+        "alert": "select",
+        "colormode": "ct",
+        "mode": "homeautomation",
+        "reachable": true
+      },
+      "swupdate": {
+        "state": "noupdates",
+        "lastinstall": "2025-07-03T12:10:54"
+      },
+      "type": "Color temperature light",
+      "name": "Toilet 1",
+      "modelid": "LTG002",
+      "manufacturername": "Signify Netherlands B.V.",
+      "productname": "Hue ambiance spot",
+      "capabilities": {
+        "certified": true,
+        "control": {
+          "mindimlevel": 200,
+          "maxlumen": 350,
+          "ct": { "min": 153, "max": 454 }
+        },
+        "streaming": { "renderer": false, "proxy": false }
+      },
+      "config": {
+        "archetype": "singlespot",
+        "function": "mixed",
+        "direction": "downwards",
+        "startup": { "mode": "safety", "configured": true }
+      },
+      "uniqueid": "00:17:88:01:0b:bb:86:3c-0b",
+      "swversion": "1.122.8",
+      "swconfigid": "2300777B",
+      "productid": "Philips-LTG002-3-GU10CTv2"
+    },
+    "17": {
+      "state": {
+        "on": false,
+        "bri": 127,
+        "ct": 369,
+        "alert": "select",
+        "colormode": "ct",
+        "mode": "homeautomation",
+        "reachable": true
+      },
+      "swupdate": {
+        "state": "noupdates",
+        "lastinstall": "2025-07-03T12:10:58"
+      },
+      "type": "Color temperature light",
+      "name": "Toilet 2",
+      "modelid": "LTG002",
+      "manufacturername": "Signify Netherlands B.V.",
+      "productname": "Hue ambiance spot",
+      "capabilities": {
+        "certified": true,
+        "control": {
+          "mindimlevel": 200,
+          "maxlumen": 350,
+          "ct": { "min": 153, "max": 454 }
+        },
+        "streaming": { "renderer": false, "proxy": false }
+      },
+      "config": {
+        "archetype": "singlespot",
+        "function": "mixed",
+        "direction": "downwards",
+        "startup": { "mode": "safety", "configured": true }
+      },
+      "uniqueid": "00:17:88:01:0b:bb:83:d1-0b",
+      "swversion": "1.122.8",
+      "swconfigid": "2300777B",
+      "productid": "Philips-LTG002-3-GU10CTv2"
+    },
+    "18": {
+      "state": {
+        "on": false,
+        "bri": 127,
+        "hue": 0,
+        "sat": 188,
+        "effect": "none",
+        "xy": [0.4426, 0.4058],
+        "ct": 345,
+        "alert": "select",
+        "colormode": "xy",
+        "mode": "homeautomation",
+        "reachable": true
+      },
+      "swupdate": {
+        "state": "notupdatable",
+        "lastinstall": "2025-01-11T19:41:42"
+      },
+      "type": "Extended color light",
+      "name": "Office ceiling spot 2",
+      "modelid": "TRADFRI bulb GU10 CWS 345lm",
+      "manufacturername": "IKEA of Sweden",
+      "productname": "Extended color light",
+      "capabilities": {
+        "certified": false,
+        "control": {
+          "colorgamuttype": "other",
+          "colorgamut": [
+            [0.0, 0.0],
+            [0.0, 0.0],
+            [0.0, 0.0]
+          ],
+          "ct": { "min": 250, "max": 454 }
+        },
+        "streaming": { "renderer": false, "proxy": false }
+      },
+      "config": {
+        "archetype": "singlespot",
+        "function": "mixed",
+        "direction": "omnidirectional"
+      },
+      "uniqueid": "1c:34:f1:ff:fe:a2:66:e1-01",
+      "swversion": "1.0.021"
+    },
+    "29": {
+      "state": {
+        "on": false,
+        "bri": 1,
+        "ct": 343,
+        "alert": "select",
+        "colormode": "ct",
+        "mode": "homeautomation",
+        "reachable": true
+      },
+      "swupdate": {
+        "state": "noupdates",
+        "lastinstall": "2025-10-19T11:38:18"
+      },
+      "type": "Color temperature light",
+      "name": "FH 4.2",
+      "modelid": "LTG002",
+      "manufacturername": "Signify Netherlands B.V.",
+      "productname": "Hue ambiance spot",
+      "capabilities": {
+        "certified": true,
+        "control": {
+          "mindimlevel": 200,
+          "maxlumen": 350,
+          "ct": { "min": 153, "max": 454 }
+        },
+        "streaming": { "renderer": false, "proxy": false }
+      },
+      "config": {
+        "archetype": "spotbulb",
+        "function": "mixed",
+        "direction": "downwards",
+        "startup": { "mode": "safety", "configured": true }
+      },
+      "uniqueid": "00:17:88:01:0c:41:89:74-0b",
+      "swversion": "1.122.8",
+      "swconfigid": "2300777B",
+      "productid": "Philips-LTG002-3-GU10CTv2"
+    },
+    "30": {
+      "state": {
+        "on": false,
+        "bri": 1,
+        "ct": 343,
+        "alert": "select",
+        "colormode": "ct",
+        "mode": "homeautomation",
+        "reachable": true
+      },
+      "swupdate": {
+        "state": "noupdates",
+        "lastinstall": "2025-10-19T11:38:21"
+      },
+      "type": "Color temperature light",
+      "name": "FH 2.1",
+      "modelid": "LTG002",
+      "manufacturername": "Signify Netherlands B.V.",
+      "productname": "Hue ambiance spot",
+      "capabilities": {
+        "certified": true,
+        "control": {
+          "mindimlevel": 200,
+          "maxlumen": 350,
+          "ct": { "min": 153, "max": 454 }
+        },
+        "streaming": { "renderer": false, "proxy": false }
+      },
+      "config": {
+        "archetype": "spotbulb",
+        "function": "mixed",
+        "direction": "downwards",
+        "startup": { "mode": "safety", "configured": true }
+      },
+      "uniqueid": "00:17:88:01:0b:c6:63:b7-0b",
+      "swversion": "1.122.8",
+      "swconfigid": "2300777B",
+      "productid": "Philips-LTG002-3-GU10CTv2"
+    },
+    "31": {
+      "state": {
+        "on": false,
+        "bri": 1,
+        "ct": 343,
+        "alert": "select",
+        "colormode": "ct",
+        "mode": "homeautomation",
+        "reachable": true
+      },
+      "swupdate": {
+        "state": "noupdates",
+        "lastinstall": "2025-10-19T11:38:28"
+      },
+      "type": "Color temperature light",
+      "name": "FH 1.2",
+      "modelid": "LTG002",
+      "manufacturername": "Signify Netherlands B.V.",
+      "productname": "Hue ambiance spot",
+      "capabilities": {
+        "certified": true,
+        "control": {
+          "mindimlevel": 200,
+          "maxlumen": 350,
+          "ct": { "min": 153, "max": 454 }
+        },
+        "streaming": { "renderer": false, "proxy": false }
+      },
+      "config": {
+        "archetype": "spotbulb",
+        "function": "mixed",
+        "direction": "downwards",
+        "startup": { "mode": "safety", "configured": true }
+      },
+      "uniqueid": "00:17:88:01:0b:c6:63:b4-0b",
+      "swversion": "1.122.8",
+      "swconfigid": "2300777B",
+      "productid": "Philips-LTG002-3-GU10CTv2"
+    },
+    "32": {
+      "state": {
+        "on": false,
+        "bri": 1,
+        "hue": 58927,
+        "sat": 145,
+        "effect": "none",
+        "xy": [0.4478, 0.2843],
+        "ct": 350,
+        "alert": "select",
+        "colormode": "xy",
+        "mode": "homeautomation",
+        "reachable": true
+      },
+      "swupdate": {
+        "state": "noupdates",
+        "lastinstall": "2025-10-19T11:38:31"
+      },
+      "type": "Extended color light",
+      "name": "FH 3. 1",
+      "modelid": "LCG002",
+      "manufacturername": "Signify Netherlands B.V.",
+      "productname": "Hue color spot",
+      "capabilities": {
+        "certified": true,
+        "control": {
+          "mindimlevel": 200,
+          "maxlumen": 300,
+          "colorgamuttype": "C",
+          "colorgamut": [
+            [0.6915, 0.3083],
+            [0.17, 0.7],
+            [0.1532, 0.0475]
+          ],
+          "ct": { "min": 153, "max": 500 }
+        },
+        "streaming": { "renderer": true, "proxy": true }
+      },
+      "config": {
+        "archetype": "spotbulb",
+        "function": "mixed",
+        "direction": "downwards",
+        "startup": { "mode": "safety", "configured": true }
+      },
+      "uniqueid": "00:17:88:01:0b:ba:98:7e-0b",
+      "swversion": "1.122.8",
+      "swconfigid": "24EB3638",
+      "productid": "Philips-LCG002-3-GU10ECLv2"
+    },
+    "33": {
+      "state": {
+        "on": false,
+        "bri": 1,
+        "hue": 62143,
+        "sat": 189,
+        "effect": "none",
+        "xy": [0.5381, 0.2901],
+        "ct": 500,
+        "alert": "select",
+        "colormode": "xy",
+        "mode": "homeautomation",
+        "reachable": true
+      },
+      "swupdate": {
+        "state": "noupdates",
+        "lastinstall": "2025-10-19T11:38:39"
+      },
+      "type": "Extended color light",
+      "name": "FH 1.1",
+      "modelid": "LCG002",
+      "manufacturername": "Signify Netherlands B.V.",
+      "productname": "Hue color spot",
+      "capabilities": {
+        "certified": true,
+        "control": {
+          "mindimlevel": 200,
+          "maxlumen": 300,
+          "colorgamuttype": "C",
+          "colorgamut": [
+            [0.6915, 0.3083],
+            [0.17, 0.7],
+            [0.1532, 0.0475]
+          ],
+          "ct": { "min": 153, "max": 500 }
+        },
+        "streaming": { "renderer": true, "proxy": true }
+      },
+      "config": {
+        "archetype": "spotbulb",
+        "function": "mixed",
+        "direction": "downwards",
+        "startup": { "mode": "safety", "configured": true }
+      },
+      "uniqueid": "00:17:88:01:0b:ba:ae:4b-0b",
+      "swversion": "1.122.8",
+      "swconfigid": "24EB3638",
+      "productid": "Philips-LCG002-3-GU10ECLv2"
+    },
+    "34": {
+      "state": {
+        "on": false,
+        "bri": 1,
+        "ct": 343,
+        "alert": "select",
+        "colormode": "ct",
+        "mode": "homeautomation",
+        "reachable": true
+      },
+      "swupdate": {
+        "state": "noupdates",
+        "lastinstall": "2025-10-19T11:38:41"
+      },
+      "type": "Color temperature light",
+      "name": "FH 3.2",
+      "modelid": "LTG002",
+      "manufacturername": "Signify Netherlands B.V.",
+      "productname": "Hue ambiance spot",
+      "capabilities": {
+        "certified": true,
+        "control": {
+          "mindimlevel": 200,
+          "maxlumen": 350,
+          "ct": { "min": 153, "max": 454 }
+        },
+        "streaming": { "renderer": false, "proxy": false }
+      },
+      "config": {
+        "archetype": "spotbulb",
+        "function": "mixed",
+        "direction": "downwards",
+        "startup": { "mode": "safety", "configured": true }
+      },
+      "uniqueid": "00:17:88:01:0b:c6:59:a9-0b",
+      "swversion": "1.122.8",
+      "swconfigid": "2300777B",
+      "productid": "Philips-LTG002-3-GU10CTv2"
+    },
+    "36": {
+      "state": {
+        "on": false,
+        "bri": 1,
+        "ct": 343,
+        "alert": "select",
+        "colormode": "ct",
+        "mode": "homeautomation",
+        "reachable": true
+      },
+      "swupdate": {
+        "state": "noupdates",
+        "lastinstall": "2025-10-19T11:38:44"
+      },
+      "type": "Color temperature light",
+      "name": "FH 5.1",
+      "modelid": "LTG002",
+      "manufacturername": "Signify Netherlands B.V.",
+      "productname": "Hue ambiance spot",
+      "capabilities": {
+        "certified": true,
+        "control": {
+          "mindimlevel": 200,
+          "maxlumen": 350,
+          "ct": { "min": 153, "max": 454 }
+        },
+        "streaming": { "renderer": false, "proxy": false }
+      },
+      "config": {
+        "archetype": "spotbulb",
+        "function": "mixed",
+        "direction": "downwards",
+        "startup": { "mode": "safety", "configured": true }
+      },
+      "uniqueid": "00:17:88:01:0b:c6:62:bb-0b",
+      "swversion": "1.122.8",
+      "swconfigid": "2300777B",
+      "productid": "Philips-LTG002-3-GU10CTv2"
+    },
+    "37": {
+      "state": {
+        "on": false,
+        "bri": 1,
+        "ct": 343,
+        "alert": "select",
+        "colormode": "ct",
+        "mode": "homeautomation",
+        "reachable": true
+      },
+      "swupdate": {
+        "state": "noupdates",
+        "lastinstall": "2025-10-19T11:38:46"
+      },
+      "type": "Color temperature light",
+      "name": "FH 6.1",
+      "modelid": "LTG002",
+      "manufacturername": "Signify Netherlands B.V.",
+      "productname": "Hue ambiance spot",
+      "capabilities": {
+        "certified": true,
+        "control": {
+          "mindimlevel": 200,
+          "maxlumen": 350,
+          "ct": { "min": 153, "max": 454 }
+        },
+        "streaming": { "renderer": false, "proxy": false }
+      },
+      "config": {
+        "archetype": "spotbulb",
+        "function": "mixed",
+        "direction": "downwards",
+        "startup": { "mode": "safety", "configured": true }
+      },
+      "uniqueid": "00:17:88:01:0c:41:8b:09-0b",
+      "swversion": "1.122.8",
+      "swconfigid": "2300777B",
+      "productid": "Philips-LTG002-3-GU10CTv2"
+    },
+    "38": {
+      "state": {
+        "on": false,
+        "bri": 1,
+        "hue": 62143,
+        "sat": 189,
+        "effect": "none",
+        "xy": [0.5381, 0.2901],
+        "ct": 500,
+        "alert": "select",
+        "colormode": "xy",
+        "mode": "homeautomation",
+        "reachable": true
+      },
+      "swupdate": {
+        "state": "noupdates",
+        "lastinstall": "2025-10-19T11:38:49"
+      },
+      "type": "Extended color light",
+      "name": "FH 6.2",
+      "modelid": "LCG002",
+      "manufacturername": "Signify Netherlands B.V.",
+      "productname": "Hue color spot",
+      "capabilities": {
+        "certified": true,
+        "control": {
+          "mindimlevel": 200,
+          "maxlumen": 300,
+          "colorgamuttype": "C",
+          "colorgamut": [
+            [0.6915, 0.3083],
+            [0.17, 0.7],
+            [0.1532, 0.0475]
+          ],
+          "ct": { "min": 153, "max": 500 }
+        },
+        "streaming": { "renderer": true, "proxy": true }
+      },
+      "config": {
+        "archetype": "spotbulb",
+        "function": "mixed",
+        "direction": "downwards",
+        "startup": { "mode": "safety", "configured": true }
+      },
+      "uniqueid": "00:17:88:01:0b:ba:ad:b8-0b",
+      "swversion": "1.122.8",
+      "swconfigid": "24EB3638",
+      "productid": "Philips-LCG002-3-GU10ECLv2"
+    },
+    "39": {
+      "state": {
+        "on": false,
+        "bri": 1,
+        "hue": 188,
+        "sat": 119,
+        "effect": "none",
+        "xy": [0.5243, 0.346],
+        "ct": 494,
+        "alert": "select",
+        "colormode": "xy",
+        "mode": "homeautomation",
+        "reachable": true
+      },
+      "swupdate": {
+        "state": "noupdates",
+        "lastinstall": "2025-10-19T11:38:50"
+      },
+      "type": "Extended color light",
+      "name": "FH 4.1",
+      "modelid": "LCG002",
+      "manufacturername": "Signify Netherlands B.V.",
+      "productname": "Hue color spot",
+      "capabilities": {
+        "certified": true,
+        "control": {
+          "mindimlevel": 200,
+          "maxlumen": 300,
+          "colorgamuttype": "C",
+          "colorgamut": [
+            [0.6915, 0.3083],
+            [0.17, 0.7],
+            [0.1532, 0.0475]
+          ],
+          "ct": { "min": 153, "max": 500 }
+        },
+        "streaming": { "renderer": true, "proxy": true }
+      },
+      "config": {
+        "archetype": "spotbulb",
+        "function": "mixed",
+        "direction": "downwards",
+        "startup": { "mode": "safety", "configured": true }
+      },
+      "uniqueid": "00:17:88:01:0b:bc:ff:24-0b",
+      "swversion": "1.122.8",
+      "swconfigid": "24EB3638",
+      "productid": "Philips-LCG002-3-GU10ECLv2"
+    },
+    "40": {
+      "state": {
+        "on": false,
+        "bri": 1,
+        "hue": 47565,
+        "sat": 192,
+        "effect": "none",
+        "xy": [0.2188, 0.1328],
+        "ct": 153,
+        "alert": "select",
+        "colormode": "xy",
+        "mode": "homeautomation",
+        "reachable": true
+      },
+      "swupdate": {
+        "state": "noupdates",
+        "lastinstall": "2025-10-19T11:38:53"
+      },
+      "type": "Extended color light",
+      "name": "FH 2.2",
+      "modelid": "LCG002",
+      "manufacturername": "Signify Netherlands B.V.",
+      "productname": "Hue color spot",
+      "capabilities": {
+        "certified": true,
+        "control": {
+          "mindimlevel": 200,
+          "maxlumen": 300,
+          "colorgamuttype": "C",
+          "colorgamut": [
+            [0.6915, 0.3083],
+            [0.17, 0.7],
+            [0.1532, 0.0475]
+          ],
+          "ct": { "min": 153, "max": 500 }
+        },
+        "streaming": { "renderer": true, "proxy": true }
+      },
+      "config": {
+        "archetype": "spotbulb",
+        "function": "mixed",
+        "direction": "downwards",
+        "startup": { "mode": "safety", "configured": true }
+      },
+      "uniqueid": "00:17:88:01:0b:ba:ad:b4-0b",
+      "swversion": "1.122.8",
+      "swconfigid": "24EB3638",
+      "productid": "Philips-LCG002-3-GU10ECLv2"
+    },
+    "41": {
+      "state": {
+        "on": false,
+        "bri": 1,
+        "hue": 54551,
+        "sat": 185,
+        "effect": "none",
+        "xy": [0.3733, 0.2137],
+        "ct": 238,
+        "alert": "select",
+        "colormode": "xy",
+        "mode": "homeautomation",
+        "reachable": true
+      },
+      "swupdate": {
+        "state": "noupdates",
+        "lastinstall": "2025-10-19T11:38:55"
+      },
+      "type": "Extended color light",
+      "name": "FH 5.2",
+      "modelid": "LCG002",
+      "manufacturername": "Signify Netherlands B.V.",
+      "productname": "Hue color spot",
+      "capabilities": {
+        "certified": true,
+        "control": {
+          "mindimlevel": 200,
+          "maxlumen": 300,
+          "colorgamuttype": "C",
+          "colorgamut": [
+            [0.6915, 0.3083],
+            [0.17, 0.7],
+            [0.1532, 0.0475]
+          ],
+          "ct": { "min": 153, "max": 500 }
+        },
+        "streaming": { "renderer": true, "proxy": true }
+      },
+      "config": {
+        "archetype": "spotbulb",
+        "function": "mixed",
+        "direction": "downwards",
+        "startup": { "mode": "safety", "configured": true }
+      },
+      "uniqueid": "00:17:88:01:0b:c3:1d:3b-0b",
+      "swversion": "1.122.8",
+      "swconfigid": "24EB3638",
+      "productid": "Philips-LCG002-3-GU10ECLv2"
+    },
+    "46": {
+      "state": {
+        "on": true,
+        "bri": 1,
+        "hue": 0,
+        "sat": 201,
+        "effect": "none",
+        "xy": [0.4996, 0.293],
+        "ct": 280,
+        "alert": "none",
+        "colormode": "xy",
+        "mode": "homeautomation",
+        "reachable": true
+      },
+      "swupdate": {
+        "state": "notupdatable",
+        "lastinstall": "2025-11-26T20:32:57"
+      },
+      "type": "Extended color light",
+      "name": "Extended color light 1",
+      "modelid": "TRADFRI bulb GU10 CWS 345lm",
+      "manufacturername": "IKEA of Sweden",
+      "productname": "Extended color light",
+      "capabilities": {
+        "certified": false,
+        "control": {
+          "colorgamuttype": "other",
+          "colorgamut": [
+            [0.0, 0.0],
+            [0.0, 0.0],
+            [0.0, 0.0]
+          ],
+          "ct": { "min": 250, "max": 454 }
+        },
+        "streaming": { "renderer": false, "proxy": false }
+      },
+      "config": {
+        "archetype": "classicbulb",
+        "function": "mixed",
+        "direction": "omnidirectional"
+      },
+      "uniqueid": "44:e2:f8:ff:fe:36:bd:76-01",
+      "swversion": "1.0.44"
+    },
+    "47": {
+      "state": {
+        "on": true,
+        "bri": 16,
+        "hue": 0,
+        "sat": 201,
+        "effect": "none",
+        "xy": [0.3664, 0.2621],
+        "ct": 147,
+        "alert": "none",
+        "colormode": "xy",
+        "mode": "homeautomation",
+        "reachable": true
+      },
+      "swupdate": {
+        "state": "notupdatable",
+        "lastinstall": "2025-11-26T20:33:29"
+      },
+      "type": "Extended color light",
+      "name": "Extended color light 2",
+      "modelid": "TRADFRI bulb GU10 CWS 345lm",
+      "manufacturername": "IKEA of Sweden",
+      "productname": "Extended color light",
+      "capabilities": {
+        "certified": false,
+        "control": {
+          "colorgamuttype": "other",
+          "colorgamut": [
+            [0.0, 0.0],
+            [0.0, 0.0],
+            [0.0, 0.0]
+          ],
+          "ct": { "min": 250, "max": 454 }
+        },
+        "streaming": { "renderer": false, "proxy": false }
+      },
+      "config": {
+        "archetype": "classicbulb",
+        "function": "mixed",
+        "direction": "omnidirectional"
+      },
+      "uniqueid": "44:e2:f8:ff:fe:46:f8:5d-01",
+      "swversion": "1.0.44"
+    },
+    "48": {
+      "state": {
+        "on": false,
+        "bri": 76,
+        "hue": 0,
+        "sat": 245,
+        "effect": "none",
+        "xy": [0.6178, 0.3413],
+        "ct": 454,
+        "alert": "none",
+        "colormode": "xy",
+        "mode": "homeautomation",
+        "reachable": true
+      },
+      "swupdate": {
+        "state": "notupdatable",
+        "lastinstall": "2025-11-26T20:34:42"
+      },
+      "type": "Extended color light",
+      "name": "Extended color light 3",
+      "modelid": "TRADFRI bulb GU10 CWS 345lm",
+      "manufacturername": "IKEA of Sweden",
+      "productname": "Extended color light",
+      "capabilities": {
+        "certified": false,
+        "control": {
+          "colorgamuttype": "other",
+          "colorgamut": [
+            [0.0, 0.0],
+            [0.0, 0.0],
+            [0.0, 0.0]
+          ],
+          "ct": { "min": 250, "max": 454 }
+        },
+        "streaming": { "renderer": false, "proxy": false }
+      },
+      "config": {
+        "archetype": "classicbulb",
+        "function": "mixed",
+        "direction": "omnidirectional"
+      },
+      "uniqueid": "94:de:b8:ff:fe:b5:44:1e-01",
+      "swversion": "1.0.021"
+    }
+  },
+  "groups": {
+    "1": {
+      "name": "Office",
+      "lights": ["18", "14", "13", "12", "11", "7", "10", "8"],
+      "sensors": ["18", "19", "20"],
+      "type": "Room",
+      "state": { "all_on": false, "any_on": true },
+      "presence": {
+        "state": {
+          "presence": false,
+          "presence_all": false,
+          "lastupdated": "2025-12-30T17:54:19"
+        }
+      },
+      "lightlevel": {
+        "state": {
+          "dark": true,
+          "dark_all": true,
+          "daylight": false,
+          "daylight_any": false,
+          "lightlevel": 0,
+          "lightlevel_min": 0,
+          "lightlevel_max": 0,
+          "lastupdated": "2025-12-30T17:45:38"
+        }
+      },
+      "recycle": false,
+      "class": "Living room",
+      "action": {
+        "on": true,
+        "bri": 1,
+        "hue": 0,
+        "sat": 188,
+        "effect": "none",
+        "xy": [0.4426, 0.4058],
+        "ct": 345,
+        "alert": "select",
+        "colormode": "hs"
+      }
+    },
+    "81": {
+      "name": "Desk",
+      "lights": ["12", "11"],
+      "sensors": [],
+      "type": "Zone",
+      "state": { "all_on": true, "any_on": true },
+      "recycle": false,
+      "class": "Office",
+      "action": {
+        "on": true,
+        "bri": 25,
+        "hue": 0,
+        "sat": 188,
+        "effect": "none",
+        "xy": [0.4426, 0.4058],
+        "ct": 346,
+        "alert": "select",
+        "colormode": "ct"
+      }
+    },
+    "82": {
+      "name": "Office lights only",
+      "lights": ["10", "18", "14", "13", "7"],
+      "sensors": [],
+      "type": "Zone",
+      "state": { "all_on": false, "any_on": false },
+      "recycle": false,
+      "class": "Living room",
+      "action": {
+        "on": false,
+        "bri": 127,
+        "hue": 2769,
+        "sat": 206,
+        "effect": "none",
+        "xy": [0.4445, 0.4067],
+        "ct": 346,
+        "alert": "select",
+        "colormode": "xy"
+      }
+    },
+    "83": {
+      "name": "Toilet",
+      "lights": ["16", "17"],
+      "sensors": ["13", "14", "15", "12"],
+      "type": "Room",
+      "state": { "all_on": false, "any_on": false },
+      "presence": {
+        "state": {
+          "presence": false,
+          "presence_all": false,
+          "lastupdated": "2025-12-30T15:04:00"
+        }
+      },
+      "lightlevel": {
+        "state": {
+          "dark": true,
+          "dark_all": true,
+          "daylight": false,
+          "daylight_any": false,
+          "lightlevel": 0,
+          "lightlevel_min": 0,
+          "lightlevel_max": 0,
+          "lastupdated": "2025-12-30T15:08:59"
+        }
+      },
+      "recycle": false,
+      "class": "Bedroom",
+      "action": {
+        "on": false,
+        "bri": 127,
+        "ct": 369,
+        "alert": "select",
+        "colormode": "ct"
+      }
+    },
+    "84": {
+      "name": "Bedroom Hallway",
+      "lights": ["48", "46", "47"],
+      "sensors": ["21", "22", "23", "17", "16"],
+      "type": "Room",
+      "state": { "all_on": false, "any_on": true },
+      "presence": {
+        "state": {
+          "presence": false,
+          "presence_all": false,
+          "lastupdated": "2025-12-30T17:54:23"
+        }
+      },
+      "lightlevel": {
+        "state": {
+          "dark": true,
+          "dark_all": true,
+          "daylight": false,
+          "daylight_any": false,
+          "lightlevel": 1360,
+          "lightlevel_min": 1360,
+          "lightlevel_max": 1360,
+          "lastupdated": "2025-12-30T17:50:39"
+        }
+      },
+      "recycle": false,
+      "class": "Hallway",
+      "action": {
+        "on": true,
+        "bri": 16,
+        "hue": 0,
+        "sat": 201,
+        "effect": "none",
+        "xy": [0.3664, 0.2621],
+        "ct": 147,
+        "alert": "none",
+        "colormode": "xy"
+      }
+    },
+    "85": {
+      "name": "Office Desk Power",
+      "lights": ["8"],
+      "sensors": [],
+      "type": "Zone",
+      "state": { "all_on": true, "any_on": true },
+      "recycle": false,
+      "class": "Bedroom",
+      "action": { "on": true, "alert": "select" }
+    },
+    "86": {
+      "name": "Front door hallway",
+      "lights": [
+        "30",
+        "31",
+        "32",
+        "33",
+        "34",
+        "36",
+        "37",
+        "38",
+        "39",
+        "40",
+        "41",
+        "29"
+      ],
+      "sensors": ["26", "27", "28", "29", "30", "31", "25", "24"],
+      "type": "Room",
+      "state": { "all_on": false, "any_on": false },
+      "presence": {
+        "state": {
+          "presence": false,
+          "presence_all": false,
+          "lastupdated": "2025-12-30T15:49:32"
+        }
+      },
+      "lightlevel": {
+        "state": {
+          "dark": true,
+          "dark_all": true,
+          "daylight": false,
+          "daylight_any": false,
+          "lightlevel": 0,
+          "lightlevel_min": 0,
+          "lightlevel_max": 0,
+          "lastupdated": "2025-12-30T15:54:30"
+        }
+      },
+      "recycle": false,
+      "class": "Hallway",
+      "action": {
+        "on": false,
+        "bri": 1,
+        "hue": 54551,
+        "sat": 185,
+        "effect": "none",
+        "xy": [0.3733, 0.2137],
+        "ct": 343,
+        "alert": "select",
+        "colormode": "ct"
+      }
+    },
+    "87": {
+      "name": "Hallways",
+      "lights": [
+        "48",
+        "47",
+        "46",
+        "30",
+        "31",
+        "32",
+        "33",
+        "34",
+        "36",
+        "37",
+        "38",
+        "39",
+        "40",
+        "41",
+        "29"
+      ],
+      "sensors": [],
+      "type": "Zone",
+      "state": { "all_on": false, "any_on": true },
+      "recycle": false,
+      "class": "Kitchen",
+      "action": {
+        "on": false,
+        "bri": 1,
+        "hue": 54551,
+        "sat": 185,
+        "effect": "none",
+        "xy": [0.3733, 0.2137],
+        "ct": 343,
+        "alert": "select",
+        "colormode": "ct"
+      }
+    }
+  },
+  "config": {
+    "name": "Office",
+    "zigbeechannel": 25,
+    "bridgeid": "ECB5FAFFFEA5E332",
+    "mac": "ec:b5:fa:a5:e3:32",
+    "dhcp": true,
+    "ipaddress": "192.168.1.179",
+    "netmask": "255.255.255.0",
+    "gateway": "192.168.1.1",
+    "proxyaddress": "none",
+    "proxyport": 0,
+    "UTC": "2025-12-30T17:56:30",
+    "localtime": "2025-12-30T18:56:30",
+    "timezone": "Europe/Amsterdam",
+    "modelid": "BSB002",
+    "datastoreversion": "180",
+    "swversion": "1974142030",
+    "apiversion": "1.74.0",
+    "swupdate2": {
+      "checkforupdate": false,
+      "lastchange": "2025-12-09T13:30:41",
+      "bridge": { "state": "noupdates", "lastinstall": "2025-12-09T13:30:41" },
+      "state": "noupdates",
+      "autoinstall": { "updatetime": "T14:00:00", "on": true }
+    },
+    "linkbutton": false,
+    "portalservices": true,
+    "analyticsconsent": true,
+    "portalconnection": "disconnected",
+    "portalstate": {
+      "signedon": false,
+      "incoming": false,
+      "outgoing": false,
+      "communication": "disconnected"
+    },
+    "internetservices": {
+      "internet": "connected",
+      "remoteaccess": "connected",
+      "time": "connected",
+      "swupdate": "connected"
+    },
+    "factorynew": false,
+    "replacesbridgeid": null,
+    "starterkitid": "",
+    "backup": { "status": "idle", "errorcode": 0 },
+    "whitelist": {
+      "8386b625-767a-4c0d-8e0f-a1a4038f0d0c": {
+        "last use date": "2025-12-26T00:54:48",
+        "create date": "2022-11-16T19:16:24",
+        "name": "Hue#iPhone"
+      },
+      "5f7c234f-a548-43dc-9791-a0eeaa641a16": {
+        "last use date": "2024-06-21T18:27:40",
+        "create date": "2022-11-16T19:57:17",
+        "name": "Hue#iPhone"
+      },
+      "b8eb9758-81f1-4e51-b5e2-3c7be0c764f7": {
+        "last use date": "2025-01-11T19:42:52",
+        "create date": "2023-08-30T19:25:21",
+        "name": "hue-hca-actions-on-google"
+      },
+      "08895b36-ae5a-4526-9926-bf42d5861c5f": {
+        "last use date": "2024-11-07T16:34:55",
+        "create date": "2024-11-07T16:34:54",
+        "name": "home-automation-api#undefined"
+      },
+      "3441d7e5-575d-4182-a435-9bfc15efb955": {
+        "last use date": "2024-11-07T16:37:07",
+        "create date": "2024-11-07T16:37:06",
+        "name": "home-automation-api#undefined"
+      },
+      "0bf710c8-eca2-4061-9db4-68e99c81bf15": {
+        "last use date": "2024-11-07T19:47:18",
+        "create date": "2024-11-07T19:47:18",
+        "name": "home-automation-api#undefined"
+      },
+      "9be637ce-d29d-4668-a577-4104cf764d1f": {
+        "last use date": "2024-11-07T19:48:31",
+        "create date": "2024-11-07T19:48:30",
+        "name": "home-automation-api#undefined"
+      },
+      "58d95da5-90f2-40b7-8802-b21a4a6be630": {
+        "last use date": "2024-11-09T08:11:27",
+        "create date": "2024-11-07T19:53:45",
+        "name": "home-automation-api#undefined"
+      },
+      "0215357b-5b84-460a-a75d-2aa24f6fa62a": {
+        "last use date": "2024-11-09T08:16:03",
+        "create date": "2024-11-09T08:12:49",
+        "name": "home-automation-api#undefined"
+      },
+      "86be18d8-f21e-483a-8eb0-4d34bb45413a": {
+        "last use date": "2024-11-10T14:44:42",
+        "create date": "2024-11-09T08:32:27",
+        "name": "home-automation-api#undefined"
+      },
+      "64f7055c-a14d-44d5-8688-7fda54a587ec": {
+        "last use date": "2024-11-18T17:29:34",
+        "create date": "2024-11-18T17:13:47",
+        "name": "home-automation-api#undefined"
+      },
+      "73b2d02f-4a60-4c9b-abe6-9bd0d195b2de": {
+        "last use date": "2025-12-29T22:33:31",
+        "create date": "2025-01-12T07:33:57",
+        "name": "Hue#iPhone"
+      },
+      "ce0eeff7-f89f-4617-9495-d0c24f576f26": {
+        "last use date": "2025-02-03T18:33:44",
+        "create date": "2025-02-03T18:33:33",
+        "name": "home-automation-api#undefined"
+      },
+      "05ab7c05-9fef-4b14-a10e-4a6aa7dd1aa4": {
+        "last use date": "2025-12-30T17:56:11",
+        "create date": "2025-08-25T18:19:00",
+        "name": "home-assistant#thuis"
+      },
+      "a0010afd-a2de-4ed4-a552-7962ac3f6084": {
+        "last use date": "2025-12-19T16:23:30",
+        "create date": "2025-12-19T16:23:30",
+        "name": "home-automation-api#undefined"
+      },
+      "ba3367d9-ef14-4e9d-8242-4b9c9b910a49": {
+        "last use date": "2025-12-23T16:11:37",
+        "create date": "2025-12-23T16:11:36",
+        "name": "home-automation-api#undefined"
+      },
+      "95b436ba-2a46-41b5-815b-f817ff6b41bd": {
+        "last use date": "2025-12-23T16:51:35",
+        "create date": "2025-12-23T16:51:34",
+        "name": "home-automation-api#undefined"
+      },
+      "46a13d01-c753-4506-a5d9-1654132c355c": {
+        "last use date": "2025-12-24T17:14:57",
+        "create date": "2025-12-24T17:14:57",
+        "name": "home-automation-api#undefined"
+      },
+      "78857b3f-1f28-4c7f-b04d-9df2612902f7": {
+        "last use date": "2025-12-24T17:17:47",
+        "create date": "2025-12-24T17:17:47",
+        "name": "home-automation-api#undefined"
+      },
+      "f46bfae4-acad-47c1-8078-68421a866e99": {
+        "last use date": "2025-12-30T16:36:31",
+        "create date": "2025-12-30T16:36:30",
+        "name": "home-automation-api#undefined"
+      },
+      "cdLb2ZPCAT6H4cdjQWf1HsQaWCOXXSurHK2ukOpW": {
+        "last use date": "2025-12-30T17:56:30",
+        "create date": "2025-12-30T17:47:57",
+        "name": "home-automation-api#undefined"
+      }
+    }
+  },
+  "schedules": {},
+  "scenes": {
+    "CfuvEYKjJginbQT": {
+      "name": "Bright",
+      "type": "LightScene",
+      "lights": ["7"],
+      "owner": "8386b625-767a-4c0d-8e0f-a1a4038f0d0c",
+      "recycle": false,
+      "locked": false,
+      "appdata": { "version": 1, "data": "UJSNe_r01_d05" },
+      "picture": "",
+      "image": "732ff1d9-76a7-4630-aad0-c8acc499bb0b",
+      "lastupdated": "2022-11-16T20:04:52",
+      "version": 2
+    },
+    "tu4ZsxgJXao7Ho5": {
+      "name": "Dimmed",
+      "type": "LightScene",
+      "lights": ["7"],
+      "owner": "8386b625-767a-4c0d-8e0f-a1a4038f0d0c",
+      "recycle": false,
+      "locked": false,
+      "appdata": { "version": 1, "data": "wCJti_r01_d06" },
+      "picture": "",
+      "image": "8c74b9ba-6e89-4083-a2a7-b10a1e566fed",
+      "lastupdated": "2022-11-16T20:04:53",
+      "version": 2
+    },
+    "QbghXPW1PkAl9oG": {
+      "name": "Nightlight",
+      "type": "GroupScene",
+      "group": "1",
+      "lights": ["7", "8", "10", "11", "12", "13", "14", "18"],
+      "owner": "8386b625-767a-4c0d-8e0f-a1a4038f0d0c",
+      "recycle": false,
+      "locked": false,
+      "appdata": { "version": 0, "data": "93-yN_r01_d07" },
+      "picture": "",
+      "image": "28bbfeff-1a0c-444e-bb4b-0b74b88e0c95",
+      "lastupdated": "2025-06-01T10:10:32",
+      "version": 2
+    },
+    "2f7VQONZVsSSd2O": {
+      "name": "Savanna sunset",
+      "type": "GroupScene",
+      "group": "1",
+      "lights": ["7", "8", "10", "11", "12", "13", "14", "18"],
+      "owner": "8386b625-767a-4c0d-8e0f-a1a4038f0d0c",
+      "recycle": false,
+      "locked": false,
+      "appdata": { "version": 0, "data": "9X0xG_r01_d15" },
+      "picture": "",
+      "image": "4f2ed241-5aea-4c9d-8028-55d2b111e06f",
+      "lastupdated": "2025-11-20T07:32:00",
+      "version": 2
+    },
+    "an2PLo80UsL6un3": {
+      "name": "Relax",
+      "type": "GroupScene",
+      "group": "1",
+      "lights": ["7", "8", "10", "11", "12", "13", "14", "18"],
+      "owner": "8386b625-767a-4c0d-8e0f-a1a4038f0d0c",
+      "recycle": false,
+      "locked": false,
+      "appdata": { "version": 0, "data": "h1aCS_r01_d01" },
+      "picture": "",
+      "image": "a1f7da49-d181-4328-abea-68c9dc4b5416",
+      "lastupdated": "2025-12-23T14:35:09",
+      "version": 2
+    },
+    "uOFLpCnyniIIb6w": {
+      "name": "Only Power",
+      "type": "GroupScene",
+      "group": "1",
+      "lights": ["7", "8", "10", "11", "12", "13", "14", "18"],
+      "owner": "8386b625-767a-4c0d-8e0f-a1a4038f0d0c",
+      "recycle": false,
+      "locked": false,
+      "appdata": { "version": 0, "data": "qeFBC_r01" },
+      "picture": "",
+      "lastupdated": "2025-06-01T10:21:00",
+      "version": 2
+    },
+    "lSmzco56EbL0fiP": {
+      "name": "Honolulu",
+      "type": "GroupScene",
+      "group": "1",
+      "lights": ["7", "8", "10", "11", "12", "13", "14", "18"],
+      "owner": "8386b625-767a-4c0d-8e0f-a1a4038f0d0c",
+      "recycle": false,
+      "locked": false,
+      "appdata": { "version": 0, "data": "owISZ_r01_d42" },
+      "picture": "",
+      "image": "d271d202-6856-4633-95ae-953ba73aee64",
+      "lastupdated": "2025-12-23T14:35:52",
+      "version": 2
+    },
+    "RiSmJyWr56UpX2S": {
+      "name": "Adrift",
+      "type": "GroupScene",
+      "group": "1",
+      "lights": ["7", "8", "10", "11", "12", "13", "14", "18"],
+      "owner": "8386b625-767a-4c0d-8e0f-a1a4038f0d0c",
+      "recycle": false,
+      "locked": false,
+      "appdata": { "version": 0, "data": "zdIfq_r01" },
+      "picture": "",
+      "image": "9694fc40-922b-44a6-a646-4ab4780aa51d",
+      "lastupdated": "2025-11-20T07:32:29",
+      "version": 2
+    },
+    "FgXlZzz8GbMxht0": {
+      "name": "Resplendent",
+      "type": "GroupScene",
+      "group": "1",
+      "lights": ["7", "8", "10", "11", "12", "13", "14", "18"],
+      "owner": "8386b625-767a-4c0d-8e0f-a1a4038f0d0c",
+      "recycle": false,
+      "locked": false,
+      "appdata": { "version": 0, "data": "B-zn0_r01" },
+      "picture": "",
+      "image": "19ba4ece-0dfd-4ea6-9cd8-ba267e1dac98",
+      "lastupdated": "2025-11-20T07:28:04",
+      "version": 2
+    },
+    "uOwZqDfseSdDsSq": {
+      "name": "Rio",
+      "type": "GroupScene",
+      "group": "1",
+      "lights": ["7", "8", "10", "11", "12", "13", "14", "18"],
+      "owner": "8386b625-767a-4c0d-8e0f-a1a4038f0d0c",
+      "recycle": false,
+      "locked": false,
+      "appdata": { "version": 0, "data": "LICAz_r01" },
+      "picture": "",
+      "image": "b17c7762-2619-4435-b931-313f17cc20e0",
+      "lastupdated": "2025-11-20T07:33:07",
+      "version": 2
+    },
+    "FWVIeWNQrj481TK": {
+      "name": "Pensive",
+      "type": "GroupScene",
+      "group": "1",
+      "lights": ["7", "8", "10", "11", "12", "13", "14", "18"],
+      "owner": "8386b625-767a-4c0d-8e0f-a1a4038f0d0c",
+      "recycle": false,
+      "locked": false,
+      "appdata": { "version": 0, "data": "7xqPh_r01" },
+      "picture": "",
+      "image": "ff5dc7b4-0e7c-4990-86ac-8cd3dccec97d",
+      "lastupdated": "2025-11-20T07:28:37",
+      "version": 2
+    },
+    "kdgYcmgpO-RiA7qY": {
+      "name": "Soft",
+      "type": "GroupScene",
+      "group": "81",
+      "lights": ["11", "12"],
+      "owner": "",
+      "recycle": false,
+      "locked": false,
+      "appdata": { "version": 1, "data": "tyN-l_r81" },
+      "picture": "",
+      "lastupdated": "2023-11-06T13:00:46",
+      "version": 2
+    },
+    "lXDnJjTqvNZp0JMa": {
+      "name": "Lake mist",
+      "type": "GroupScene",
+      "group": "1",
+      "lights": ["7", "8", "10", "11", "12", "13", "14", "18"],
+      "owner": "",
+      "recycle": false,
+      "locked": false,
+      "appdata": { "version": 1, "data": "00Jic_r01" },
+      "picture": "",
+      "image": "b9deeedc-1f30-4152-90ba-e9c356f77871",
+      "lastupdated": "2025-12-23T14:37:22",
+      "version": 2
+    },
+    "htEuEpp3OzOyH6QT": {
+      "name": "Rolling hills",
+      "type": "GroupScene",
+      "group": "1",
+      "lights": ["7", "8", "10", "11", "12", "13", "14", "18"],
+      "owner": "",
+      "recycle": false,
+      "locked": false,
+      "appdata": { "version": 1, "data": "nAcDi_r01" },
+      "picture": "",
+      "image": "ed21c67b-6059-4721-8995-6cb4d7bae19d",
+      "lastupdated": "2025-12-09T07:27:42",
+      "version": 2
+    },
+    "ggCieZ7atcFNZ70d": {
+      "name": "Warm embrace",
+      "type": "GroupScene",
+      "group": "1",
+      "lights": ["7", "8", "10", "11", "12", "13", "14", "18"],
+      "owner": "",
+      "recycle": false,
+      "locked": false,
+      "appdata": { "version": 1, "data": "8UaP6_r01" },
+      "picture": "",
+      "image": "d098da1e-9311-4270-8f94-7072317d465d",
+      "lastupdated": "2025-06-01T10:10:32",
+      "version": 2
+    },
+    "gGARy7q3AKFqKLUl": {
+      "name": "Energize",
+      "type": "GroupScene",
+      "group": "81",
+      "lights": ["11", "12"],
+      "owner": "",
+      "recycle": false,
+      "locked": false,
+      "appdata": { "version": 1, "data": "vE7Z6_r81" },
+      "picture": "",
+      "image": "7fd2ccc5-5749-4142-b7a5-66405a676f03",
+      "lastupdated": "2023-11-09T14:37:37",
+      "version": 2
+    },
+    "G9OSQzZqJLTVrpR2": {
+      "name": "Concentrate",
+      "type": "GroupScene",
+      "group": "81",
+      "lights": ["11", "12"],
+      "owner": "",
+      "recycle": false,
+      "locked": false,
+      "appdata": { "version": 1, "data": "wYL12_r81" },
+      "picture": "",
+      "image": "b90c8900-a6b7-422c-a5d3-e170187dbf8c",
+      "lastupdated": "2023-11-09T14:37:37",
+      "version": 2
+    },
+    "GxzEMddrxRD8812b": {
+      "name": "Read",
+      "type": "GroupScene",
+      "group": "81",
+      "lights": ["11", "12"],
+      "owner": "",
+      "recycle": false,
+      "locked": false,
+      "appdata": { "version": 1, "data": "ozQ8r_r81" },
+      "picture": "",
+      "image": "e101a77f-9984-4f61-aac8-15741983c656",
+      "lastupdated": "2023-11-09T14:37:38",
+      "version": 2
+    },
+    "0FqDEq5phpOEAnWh": {
+      "name": "Relax",
+      "type": "GroupScene",
+      "group": "81",
+      "lights": ["11", "12"],
+      "owner": "",
+      "recycle": false,
+      "locked": false,
+      "appdata": { "version": 1, "data": "Jjf7X_r81" },
+      "picture": "",
+      "image": "a1f7da49-d181-4328-abea-68c9dc4b5416",
+      "lastupdated": "2023-11-09T14:37:38",
+      "version": 2
+    },
+    "pIOSPCmERTCQFcOv": {
+      "name": "Rest",
+      "type": "GroupScene",
+      "group": "81",
+      "lights": ["11", "12"],
+      "owner": "",
+      "recycle": false,
+      "locked": false,
+      "appdata": { "version": 1, "data": "tLPlL_r81" },
+      "picture": "",
+      "image": "11a09ad5-8d65-4e90-959b-f05981a9ab1b",
+      "lastupdated": "2023-11-09T14:37:38",
+      "version": 2
+    },
+    "nUEF4i3oPGURlOWU": {
+      "name": "Nightlight",
+      "type": "GroupScene",
+      "group": "81",
+      "lights": ["11", "12"],
+      "owner": "",
+      "recycle": false,
+      "locked": false,
+      "appdata": { "version": 1, "data": "OaJrS_r81" },
+      "picture": "",
+      "image": "28bbfeff-1a0c-444e-bb4b-0b74b88e0c95",
+      "lastupdated": "2023-11-09T14:37:38",
+      "version": 2
+    },
+    "N27fnBQguiNSlKFZ": {
+      "name": "Ibiza",
+      "type": "GroupScene",
+      "group": "1",
+      "lights": ["7", "8", "10", "11", "12", "13", "14", "18"],
+      "owner": "",
+      "recycle": false,
+      "locked": false,
+      "appdata": { "version": 1, "data": "Kc5Ri_r01" },
+      "picture": "",
+      "image": "01e1d138-fc77-44e1-8012-c04fbae878e4",
+      "lastupdated": "2025-12-09T07:26:52",
+      "version": 2
+    },
+    "-NteUDYTxzKl3ZIl": {
+      "name": "C  C",
+      "type": "GroupScene",
+      "group": "1",
+      "lights": ["7", "8", "10", "11", "12", "13", "14", "18"],
+      "owner": "",
+      "recycle": false,
+      "locked": false,
+      "appdata": { "version": 1, "data": "2nEev_r01" },
+      "picture": "",
+      "lastupdated": "2025-06-01T10:10:32",
+      "version": 2
+    },
+    "fSN8wGw-uN9h8588": {
+      "name": "Energize",
+      "type": "GroupScene",
+      "group": "83",
+      "lights": ["16", "17"],
+      "owner": "",
+      "recycle": false,
+      "locked": false,
+      "appdata": { "version": 1, "data": "J5gro_r83" },
+      "picture": "",
+      "image": "7fd2ccc5-5749-4142-b7a5-66405a676f03",
+      "lastupdated": "2024-06-11T16:54:27",
+      "version": 2
+    },
+    "sb26BqKk1yEdoQdP": {
+      "name": "Concentrate",
+      "type": "GroupScene",
+      "group": "83",
+      "lights": ["16", "17"],
+      "owner": "",
+      "recycle": false,
+      "locked": false,
+      "appdata": { "version": 1, "data": "usqSH_r83" },
+      "picture": "",
+      "image": "b90c8900-a6b7-422c-a5d3-e170187dbf8c",
+      "lastupdated": "2024-06-11T16:54:27",
+      "version": 2
+    },
+    "sdFX6yREMFbQcnVF": {
+      "name": "Read",
+      "type": "GroupScene",
+      "group": "83",
+      "lights": ["16", "17"],
+      "owner": "",
+      "recycle": false,
+      "locked": false,
+      "appdata": { "version": 1, "data": "JvFTJ_r83" },
+      "picture": "",
+      "image": "e101a77f-9984-4f61-aac8-15741983c656",
+      "lastupdated": "2024-06-11T16:54:28",
+      "version": 2
+    },
+    "YQmCdG1tNbXsjuVU": {
+      "name": "Relax",
+      "type": "GroupScene",
+      "group": "83",
+      "lights": ["16", "17"],
+      "owner": "",
+      "recycle": false,
+      "locked": false,
+      "appdata": { "version": 1, "data": "Vz8y6_r83" },
+      "picture": "",
+      "image": "a1f7da49-d181-4328-abea-68c9dc4b5416",
+      "lastupdated": "2024-06-11T16:54:28",
+      "version": 2
+    },
+    "GKALwe7OsUq-K-TO": {
+      "name": "Nightlight",
+      "type": "GroupScene",
+      "group": "83",
+      "lights": ["16", "17"],
+      "owner": "",
+      "recycle": false,
+      "locked": false,
+      "appdata": { "version": 1, "data": "aLfrz_r83" },
+      "picture": "",
+      "image": "28bbfeff-1a0c-444e-bb4b-0b74b88e0c95",
+      "lastupdated": "2024-10-27T18:16:15",
+      "version": 2
+    },
+    "YiR9xBSbw1kVJETE": {
+      "name": "Night",
+      "type": "GroupScene",
+      "group": "83",
+      "lights": ["16", "17"],
+      "owner": "",
+      "recycle": false,
+      "locked": false,
+      "appdata": { "version": 1, "data": "erCir_r83" },
+      "picture": "",
+      "lastupdated": "2024-07-26T22:11:07",
+      "version": 2
+    },
+    "iLihv6QPYXxReOxT": {
+      "name": "Bright",
+      "type": "GroupScene",
+      "group": "83",
+      "lights": ["16", "17"],
+      "owner": "",
+      "recycle": false,
+      "locked": false,
+      "appdata": { "version": 1, "data": "5MKoN_r83" },
+      "picture": "",
+      "image": "732ff1d9-76a7-4630-aad0-c8acc499bb0b",
+      "lastupdated": "2024-09-08T10:27:21",
+      "version": 2
+    },
+    "5-YMfv-WgQ0edhbR": {
+      "name": "Dimmed",
+      "type": "GroupScene",
+      "group": "83",
+      "lights": ["16", "17"],
+      "owner": "",
+      "recycle": false,
+      "locked": false,
+      "appdata": { "version": 1, "data": "VsCfF_r83" },
+      "picture": "",
+      "image": "8c74b9ba-6e89-4083-a2a7-b10a1e566fed",
+      "lastupdated": "2024-09-08T10:27:21",
+      "version": 2
+    },
+    "HEAbSerIpsjd3Toq": {
+      "name": "Light",
+      "type": "GroupScene",
+      "group": "1",
+      "lights": ["7", "8", "10", "11", "12", "13", "14", "18"],
+      "owner": "",
+      "recycle": false,
+      "locked": false,
+      "appdata": { "version": 1, "data": "BOeDy_r01" },
+      "picture": "",
+      "lastupdated": "2025-06-01T10:10:33",
+      "version": 2
+    },
+    "FpHWco-lpn04nzWk": {
+      "name": "Rest",
+      "type": "GroupScene",
+      "group": "84",
+      "lights": ["46", "47", "48"],
+      "owner": "",
+      "recycle": false,
+      "locked": false,
+      "appdata": { "version": 1, "data": "gqYV6_r84" },
+      "picture": "",
+      "image": "11a09ad5-8d65-4e90-959b-f05981a9ab1b",
+      "lastupdated": "2025-11-26T20:35:02",
+      "version": 2
+    },
+    "gJ1c8HelnQ6muRAK": {
+      "name": "Energize",
+      "type": "GroupScene",
+      "group": "1",
+      "lights": ["7", "8", "10", "11", "12", "13", "14", "18"],
+      "owner": "",
+      "recycle": false,
+      "locked": false,
+      "appdata": { "version": 1, "data": "XbTE4_r01" },
+      "picture": "",
+      "image": "7fd2ccc5-5749-4142-b7a5-66405a676f03",
+      "lastupdated": "2025-11-20T07:33:33",
+      "version": 2
+    },
+    "bqI4Hej6cW2pBLgL": {
+      "name": "Concentrate",
+      "type": "GroupScene",
+      "group": "1",
+      "lights": ["7", "8", "10", "11", "12", "13", "14", "18"],
+      "owner": "",
+      "recycle": false,
+      "locked": false,
+      "appdata": { "version": 1, "data": "eTcHQ_r01" },
+      "picture": "",
+      "image": "b90c8900-a6b7-422c-a5d3-e170187dbf8c",
+      "lastupdated": "2025-11-20T07:30:49",
+      "version": 2
+    },
+    "SH2Gkzvkd3tVsLDM": {
+      "name": "Read",
+      "type": "GroupScene",
+      "group": "1",
+      "lights": ["7", "8", "10", "11", "12", "13", "14", "18"],
+      "owner": "",
+      "recycle": false,
+      "locked": false,
+      "appdata": { "version": 1, "data": "a0MUL_r01" },
+      "picture": "",
+      "image": "e101a77f-9984-4f61-aac8-15741983c656",
+      "lastupdated": "2025-11-20T07:33:56",
+      "version": 2
+    },
+    "6IzwIat0KZMlnqsM": {
+      "name": "Energize",
+      "type": "GroupScene",
+      "group": "84",
+      "lights": ["46", "47", "48"],
+      "owner": "",
+      "recycle": false,
+      "locked": false,
+      "appdata": { "version": 1, "data": "UIEPc_r84" },
+      "picture": "",
+      "image": "7fd2ccc5-5749-4142-b7a5-66405a676f03",
+      "lastupdated": "2025-11-26T20:35:02",
+      "version": 2
+    },
+    "vOLIzck80DowjlRC": {
+      "name": "Concentrate",
+      "type": "GroupScene",
+      "group": "84",
+      "lights": ["46", "47", "48"],
+      "owner": "",
+      "recycle": false,
+      "locked": false,
+      "appdata": { "version": 1, "data": "PeogF_r84" },
+      "picture": "",
+      "image": "b90c8900-a6b7-422c-a5d3-e170187dbf8c",
+      "lastupdated": "2025-11-26T20:35:02",
+      "version": 2
+    },
+    "x1BfIzIucFziTMPG": {
+      "name": "Read",
+      "type": "GroupScene",
+      "group": "84",
+      "lights": ["46", "47", "48"],
+      "owner": "",
+      "recycle": false,
+      "locked": false,
+      "appdata": { "version": 1, "data": "FdATo_r84" },
+      "picture": "",
+      "image": "e101a77f-9984-4f61-aac8-15741983c656",
+      "lastupdated": "2025-11-26T20:35:02",
+      "version": 2
+    },
+    "542E7K6MKgAXXTki": {
+      "name": "Relax",
+      "type": "GroupScene",
+      "group": "84",
+      "lights": ["46", "47", "48"],
+      "owner": "",
+      "recycle": false,
+      "locked": false,
+      "appdata": { "version": 1, "data": "FXLbW_r84" },
+      "picture": "",
+      "image": "a1f7da49-d181-4328-abea-68c9dc4b5416",
+      "lastupdated": "2025-11-26T20:35:02",
+      "version": 2
+    },
+    "TGXc9uesKgMzmxnA": {
+      "name": "Nightlight",
+      "type": "GroupScene",
+      "group": "84",
+      "lights": ["46", "47", "48"],
+      "owner": "",
+      "recycle": false,
+      "locked": false,
+      "appdata": { "version": 1, "data": "E88R8_r84" },
+      "picture": "",
+      "image": "28bbfeff-1a0c-444e-bb4b-0b74b88e0c95",
+      "lastupdated": "2025-11-26T20:35:02",
+      "version": 2
+    },
+    "kboxGUoZOctnVdid": {
+      "name": "Bright",
+      "type": "GroupScene",
+      "group": "1",
+      "lights": ["7", "8", "10", "11", "12", "13", "14", "18"],
+      "owner": "",
+      "recycle": false,
+      "locked": false,
+      "appdata": { "version": 1, "data": "DM9kW_r01" },
+      "picture": "",
+      "image": "732ff1d9-76a7-4630-aad0-c8acc499bb0b",
+      "lastupdated": "2025-11-20T07:31:37",
+      "version": 2
+    },
+    "w3dz0rjwdstZ6FdZ": {
+      "name": "Dimmed",
+      "type": "GroupScene",
+      "group": "1",
+      "lights": ["7", "8", "10", "11", "12", "13", "14", "18"],
+      "owner": "",
+      "recycle": false,
+      "locked": false,
+      "appdata": { "version": 1, "data": "iNZ7C_r01" },
+      "picture": "",
+      "image": "8c74b9ba-6e89-4083-a2a7-b10a1e566fed",
+      "lastupdated": "2025-06-05T21:43:32",
+      "version": 2
+    },
+    "VNB6PBt6NauxgDi9": {
+      "name": "Rest",
+      "type": "GroupScene",
+      "group": "82",
+      "lights": ["7", "10", "13", "14", "18"],
+      "owner": "",
+      "recycle": false,
+      "locked": false,
+      "appdata": { "version": 1, "data": "-lj93_r82" },
+      "picture": "",
+      "image": "11a09ad5-8d65-4e90-959b-f05981a9ab1b",
+      "lastupdated": "2025-06-05T21:47:21",
+      "version": 2
+    },
+    "Mx9OE4uLo1P9mQJY": {
+      "name": "Nightlight",
+      "type": "GroupScene",
+      "group": "82",
+      "lights": ["7", "10", "13", "14", "18"],
+      "owner": "",
+      "recycle": false,
+      "locked": false,
+      "appdata": { "version": 1, "data": "do3gt_r82" },
+      "picture": "",
+      "image": "28bbfeff-1a0c-444e-bb4b-0b74b88e0c95",
+      "lastupdated": "2025-06-05T21:47:43",
+      "version": 2
+    },
+    "c5YFymUFucIQckh5": {
+      "name": "Dreamy dusk",
+      "type": "GroupScene",
+      "group": "82",
+      "lights": ["7", "10", "13", "14", "18"],
+      "owner": "",
+      "recycle": false,
+      "locked": false,
+      "appdata": { "version": 1, "data": "TyWFa_r82" },
+      "picture": "",
+      "image": "2bbb750a-95c6-4159-a654-a620ec7c101a",
+      "lastupdated": "2025-06-05T21:49:57",
+      "version": 2
+    },
+    "W5ht-NyIhsRbxL1g": {
+      "name": "Ibiza",
+      "type": "GroupScene",
+      "group": "82",
+      "lights": ["7", "10", "13", "14", "18"],
+      "owner": "",
+      "recycle": false,
+      "locked": false,
+      "appdata": { "version": 1, "data": "EyJ3H_r82" },
+      "picture": "",
+      "image": "01e1d138-fc77-44e1-8012-c04fbae878e4",
+      "lastupdated": "2025-06-05T21:52:49",
+      "version": 2
+    },
+    "xqkZr9xK77oRBfJV": {
+      "name": "Precious",
+      "type": "GroupScene",
+      "group": "82",
+      "lights": ["7", "10", "13", "14", "18"],
+      "owner": "",
+      "recycle": false,
+      "locked": false,
+      "appdata": { "version": 1, "data": "Nogc5_r82" },
+      "picture": "",
+      "image": "7f9638b1-1efc-4acc-8440-6bd70b0cf3f4",
+      "lastupdated": "2025-06-05T21:53:55",
+      "version": 2
+    },
+    "fhhEXVsE22RKxIjC": {
+      "name": "Bright",
+      "type": "GroupScene",
+      "group": "84",
+      "lights": ["46", "47", "48"],
+      "owner": "",
+      "recycle": false,
+      "locked": false,
+      "appdata": { "version": 1, "data": "jazBW_r84" },
+      "picture": "",
+      "image": "732ff1d9-76a7-4630-aad0-c8acc499bb0b",
+      "lastupdated": "2025-11-26T20:35:02",
+      "version": 2
+    },
+    "vw9KogLh2CFP7Sxp": {
+      "name": "Dimmed",
+      "type": "GroupScene",
+      "group": "84",
+      "lights": ["46", "47", "48"],
+      "owner": "",
+      "recycle": false,
+      "locked": false,
+      "appdata": { "version": 1, "data": "EnrcK_r84" },
+      "picture": "",
+      "image": "8c74b9ba-6e89-4083-a2a7-b10a1e566fed",
+      "lastupdated": "2025-11-26T20:35:02",
+      "version": 2
+    },
+    "B8XVc3ANwa6GdmEi": {
+      "name": "Fuchsia frost",
+      "type": "GroupScene",
+      "group": "86",
+      "lights": [
+        "29",
+        "30",
+        "31",
+        "32",
+        "33",
+        "34",
+        "36",
+        "37",
+        "38",
+        "39",
+        "40",
+        "41"
+      ],
+      "owner": "",
+      "recycle": false,
+      "locked": false,
+      "appdata": { "version": 1, "data": "4JvKT_r86" },
+      "picture": "",
+      "image": "bb42c7e0-ebaf-485d-b3c0-d879da0d6d89",
+      "lastupdated": "2025-12-24T22:49:10",
+      "version": 2
+    },
+    "E96H1q3ue5lc3etH": {
+      "name": "Baby's breath",
+      "type": "GroupScene",
+      "group": "84",
+      "lights": ["46", "47", "48"],
+      "owner": "",
+      "recycle": false,
+      "locked": false,
+      "appdata": { "version": 1, "data": "0XXOQ_r84" },
+      "picture": "",
+      "image": "8c74c49b-3f4c-4b14-86f5-99aa49ee9e5a",
+      "lastupdated": "2025-11-26T20:35:02",
+      "version": 2
+    },
+    "KBNDnCY45RGNNcM9": {
+      "name": "Blossom",
+      "type": "GroupScene",
+      "group": "84",
+      "lights": ["46", "47", "48"],
+      "owner": "",
+      "recycle": false,
+      "locked": false,
+      "appdata": { "version": 1, "data": "1fMIs_r84" },
+      "picture": "",
+      "image": "a8897dcb-5c90-4459-8e4a-02b984bd32b5",
+      "lastupdated": "2025-11-26T20:35:02",
+      "version": 2
+    },
+    "I85ZOV3vyngP9t3s": {
+      "name": "Amber bloom",
+      "type": "GroupScene",
+      "group": "84",
+      "lights": ["46", "47", "48"],
+      "owner": "",
+      "recycle": false,
+      "locked": false,
+      "appdata": { "version": 1, "data": "mcKie_r84" },
+      "picture": "",
+      "image": "10306e69-57ea-47a0-bd27-0efd001d0527",
+      "lastupdated": "2025-11-26T20:35:02",
+      "version": 2
+    },
+    "0oPhHHmQhnVnvpnl": {
+      "name": "Pensive",
+      "type": "GroupScene",
+      "group": "84",
+      "lights": ["46", "47", "48"],
+      "owner": "",
+      "recycle": false,
+      "locked": false,
+      "appdata": { "version": 1, "data": "d6pfB_r84" },
+      "picture": "",
+      "image": "ff5dc7b4-0e7c-4990-86ac-8cd3dccec97d",
+      "lastupdated": "2025-11-26T20:35:01",
+      "version": 2
+    },
+    "IsBYhZNsTsyAVShI": {
+      "name": "Dreamy dusk",
+      "type": "GroupScene",
+      "group": "84",
+      "lights": ["46", "47", "48"],
+      "owner": "",
+      "recycle": false,
+      "locked": false,
+      "appdata": { "version": 1, "data": "yHx9O_r84" },
+      "picture": "",
+      "image": "2bbb750a-95c6-4159-a654-a620ec7c101a",
+      "lastupdated": "2025-11-26T20:35:02",
+      "version": 2
+    },
+    "MLgc5WYLugn5WMxC": {
+      "name": "Nighttime",
+      "type": "GroupScene",
+      "group": "84",
+      "lights": ["46", "47", "48"],
+      "owner": "",
+      "recycle": false,
+      "locked": false,
+      "appdata": { "version": 1, "data": "VwBbw_r84" },
+      "picture": "",
+      "image": "afea2234-8d6f-4bb3-a174-8e5bd5f7372d",
+      "lastupdated": "2025-11-26T20:35:01",
+      "version": 2
+    },
+    "gBzR9lyodmPQ7tQT": {
+      "name": "Color burst",
+      "type": "GroupScene",
+      "group": "86",
+      "lights": [
+        "29",
+        "30",
+        "31",
+        "32",
+        "33",
+        "34",
+        "36",
+        "37",
+        "38",
+        "39",
+        "40",
+        "41"
+      ],
+      "owner": "",
+      "recycle": false,
+      "locked": false,
+      "appdata": { "version": 1, "data": "IbQiz_r86" },
+      "picture": "",
+      "image": "c8647d7d-ca53-4b0f-81f5-03eb6ba233f1",
+      "lastupdated": "2025-12-24T22:50:09",
+      "version": 2
+    },
+    "GSETcLOksFrMSJsI": {
+      "name": "Nightlight",
+      "type": "GroupScene",
+      "group": "86",
+      "lights": [
+        "29",
+        "30",
+        "31",
+        "32",
+        "33",
+        "34",
+        "36",
+        "37",
+        "38",
+        "39",
+        "40",
+        "41"
+      ],
+      "owner": "",
+      "recycle": false,
+      "locked": false,
+      "appdata": { "version": 1, "data": "0Ast4_r86" },
+      "picture": "",
+      "image": "28bbfeff-1a0c-444e-bb4b-0b74b88e0c95",
+      "lastupdated": "2025-12-24T22:51:17",
+      "version": 2
+    },
+    "dweHawbUmAGgBQeY": {
+      "name": "Precious",
+      "type": "GroupScene",
+      "group": "84",
+      "lights": ["46", "47", "48"],
+      "owner": "",
+      "recycle": false,
+      "locked": false,
+      "appdata": { "version": 1, "data": "KaKwJ_r84" },
+      "picture": "",
+      "image": "7f9638b1-1efc-4acc-8440-6bd70b0cf3f4",
+      "lastupdated": "2025-11-26T20:35:02",
+      "version": 2
+    },
+    "77OQE-hZrR8-G6eo": {
+      "name": "Warm embrace",
+      "type": "GroupScene",
+      "group": "86",
+      "lights": [
+        "29",
+        "30",
+        "31",
+        "32",
+        "33",
+        "34",
+        "36",
+        "37",
+        "38",
+        "39",
+        "40",
+        "41"
+      ],
+      "owner": "",
+      "recycle": false,
+      "locked": false,
+      "appdata": { "version": 1, "data": "lc5Y9_r86" },
+      "picture": "",
+      "image": "d098da1e-9311-4270-8f94-7072317d465d",
+      "lastupdated": "2025-12-24T22:51:33",
+      "version": 2
+    },
+    "OPXIzsU-SXROVGaT": {
+      "name": "Dreamy dusk",
+      "type": "GroupScene",
+      "group": "86",
+      "lights": [
+        "29",
+        "30",
+        "31",
+        "32",
+        "33",
+        "34",
+        "36",
+        "37",
+        "38",
+        "39",
+        "40",
+        "41"
+      ],
+      "owner": "",
+      "recycle": false,
+      "locked": false,
+      "appdata": { "version": 1, "data": "6AX7E_r86" },
+      "picture": "",
+      "image": "2bbb750a-95c6-4159-a654-a620ec7c101a",
+      "lastupdated": "2025-12-24T22:52:16",
+      "version": 2
+    },
+    "XKOSSjnSOqjuMZ-f": {
+      "name": "Energize",
+      "type": "GroupScene",
+      "group": "86",
+      "lights": [
+        "29",
+        "30",
+        "31",
+        "32",
+        "33",
+        "34",
+        "36",
+        "37",
+        "38",
+        "39",
+        "40",
+        "41"
+      ],
+      "owner": "",
+      "recycle": false,
+      "locked": false,
+      "appdata": { "version": 1, "data": "hSzKj_r86" },
+      "picture": "",
+      "image": "7fd2ccc5-5749-4142-b7a5-66405a676f03",
+      "lastupdated": "2025-12-24T23:00:51",
+      "version": 2
+    },
+    "EHjgWd1tNlIm9EwK": {
+      "name": "Concentrate",
+      "type": "GroupScene",
+      "group": "86",
+      "lights": [
+        "29",
+        "30",
+        "31",
+        "32",
+        "33",
+        "34",
+        "36",
+        "37",
+        "38",
+        "39",
+        "40",
+        "41"
+      ],
+      "owner": "",
+      "recycle": false,
+      "locked": false,
+      "appdata": { "version": 1, "data": "PLJmu_r86" },
+      "picture": "",
+      "image": "b90c8900-a6b7-422c-a5d3-e170187dbf8c",
+      "lastupdated": "2025-12-24T23:00:51",
+      "version": 2
+    },
+    "yherM11YzJ9ZR4co": {
+      "name": "Read",
+      "type": "GroupScene",
+      "group": "86",
+      "lights": [
+        "29",
+        "30",
+        "31",
+        "32",
+        "33",
+        "34",
+        "36",
+        "37",
+        "38",
+        "39",
+        "40",
+        "41"
+      ],
+      "owner": "",
+      "recycle": false,
+      "locked": false,
+      "appdata": { "version": 1, "data": "bHbV5_r86" },
+      "picture": "",
+      "image": "e101a77f-9984-4f61-aac8-15741983c656",
+      "lastupdated": "2025-12-24T23:00:51",
+      "version": 2
+    },
+    "1OD3zHzz2uXFe1sw": {
+      "name": "Relax",
+      "type": "GroupScene",
+      "group": "86",
+      "lights": [
+        "29",
+        "30",
+        "31",
+        "32",
+        "33",
+        "34",
+        "36",
+        "37",
+        "38",
+        "39",
+        "40",
+        "41"
+      ],
+      "owner": "",
+      "recycle": false,
+      "locked": false,
+      "appdata": { "version": 1, "data": "0pvNT_r86" },
+      "picture": "",
+      "image": "a1f7da49-d181-4328-abea-68c9dc4b5416",
+      "lastupdated": "2025-12-24T23:00:51",
+      "version": 2
+    },
+    "Y8ey6dw7spftZvRX": {
+      "name": "Amber bloom",
+      "type": "GroupScene",
+      "group": "1",
+      "lights": ["7", "8", "10", "11", "12", "13", "14", "18"],
+      "owner": "",
+      "recycle": false,
+      "locked": false,
+      "appdata": { "version": 1, "data": "-2KV7_r01" },
+      "picture": "",
+      "image": "10306e69-57ea-47a0-bd27-0efd001d0527",
+      "lastupdated": "2025-12-09T07:25:47",
+      "version": 2
+    }
+  },
+  "rules": {},
+  "sensors": {
+    "1": {
+      "state": { "daylight": null, "lastupdated": "none" },
+      "config": {
+        "on": true,
+        "configured": false,
+        "sunriseoffset": 30,
+        "sunsetoffset": -30
+      },
+      "name": "Daylight",
+      "type": "Daylight",
+      "modelid": "PHDL00",
+      "manufacturername": "Signify Netherlands B.V.",
+      "swversion": "1.0"
+    },
+    "2": {
+      "state": { "buttonevent": 23, "lastupdated": "2025-12-30T17:54:02" },
+      "swupdate": { "state": "notupdatable", "lastinstall": null },
+      "config": { "on": true },
+      "name": "Office switch",
+      "type": "ZGPSwitch",
+      "modelid": "FOHSWITCH",
+      "manufacturername": "PhilipsFoH",
+      "productname": "Works with Hue Switch",
+      "diversityid": "ded6468f-6b26-4a75-9582-f2b52d36a5a3",
+      "uniqueid": "00:00:00:00:01:75:0a:81-f2",
+      "capabilities": {
+        "certified": true,
+        "primary": true,
+        "inputs": [
+          {
+            "repeatintervals": [],
+            "events": [
+              { "buttonevent": 16, "eventtype": "initial_press" },
+              { "buttonevent": 20, "eventtype": "short_release" }
+            ]
+          },
+          {
+            "repeatintervals": [],
+            "events": [
+              { "buttonevent": 17, "eventtype": "initial_press" },
+              { "buttonevent": 21, "eventtype": "short_release" }
+            ]
+          },
+          {
+            "repeatintervals": [],
+            "events": [
+              { "buttonevent": 19, "eventtype": "initial_press" },
+              { "buttonevent": 23, "eventtype": "short_release" }
+            ]
+          },
+          {
+            "repeatintervals": [],
+            "events": [
+              { "buttonevent": 18, "eventtype": "initial_press" },
+              { "buttonevent": 22, "eventtype": "short_release" }
+            ]
+          }
+        ]
+      }
+    },
+    "12": {
+      "state": { "buttonevent": 21, "lastupdated": "2025-12-30T13:42:10" },
+      "swupdate": { "state": "notupdatable", "lastinstall": null },
+      "config": { "on": true },
+      "name": "Toilet switch",
+      "type": "ZGPSwitch",
+      "modelid": "FOHSWITCH",
+      "manufacturername": "PhilipsFoH",
+      "productname": "Works with Hue Switch",
+      "diversityid": "ded6468f-6b26-4a75-9582-f2b52d36a5a3",
+      "uniqueid": "00:00:00:00:01:74:fe:2c-f2",
+      "capabilities": {
+        "certified": true,
+        "primary": true,
+        "inputs": [
+          {
+            "repeatintervals": [],
+            "events": [
+              { "buttonevent": 16, "eventtype": "initial_press" },
+              { "buttonevent": 20, "eventtype": "short_release" }
+            ]
+          },
+          {
+            "repeatintervals": [],
+            "events": [
+              { "buttonevent": 17, "eventtype": "initial_press" },
+              { "buttonevent": 21, "eventtype": "short_release" }
+            ]
+          },
+          {
+            "repeatintervals": [],
+            "events": [
+              { "buttonevent": 19, "eventtype": "initial_press" },
+              { "buttonevent": 23, "eventtype": "short_release" }
+            ]
+          },
+          {
+            "repeatintervals": [],
+            "events": [
+              { "buttonevent": 18, "eventtype": "initial_press" },
+              { "buttonevent": 22, "eventtype": "short_release" }
+            ]
+          }
+        ]
+      }
+    },
+    "13": {
+      "state": { "presence": false, "lastupdated": "2025-12-30T15:04:00" },
+      "swupdate": {
+        "state": "noupdates",
+        "lastinstall": "2024-12-13T13:14:21"
+      },
+      "config": {
+        "on": true,
+        "battery": 100,
+        "reachable": true,
+        "alert": "none",
+        "sensitivity": 2,
+        "sensitivitymax": 4,
+        "ledindication": false,
+        "usertest": false,
+        "pending": []
+      },
+      "name": "Toilet sensor",
+      "type": "ZLLPresence",
+      "modelid": "SML003",
+      "manufacturername": "Signify Netherlands B.V.",
+      "productname": "Hue motion sensor",
+      "swversion": "2.77.35",
+      "uniqueid": "00:17:88:01:0d:f6:0e:e1-02-0406",
+      "capabilities": { "certified": true, "primary": true }
+    },
+    "14": {
+      "state": {
+        "lightlevel": 0,
+        "dark": true,
+        "daylight": false,
+        "lastupdated": "2025-12-30T17:53:19"
+      },
+      "swupdate": {
+        "state": "noupdates",
+        "lastinstall": "2024-12-13T13:14:21"
+      },
+      "config": {
+        "on": true,
+        "battery": 100,
+        "reachable": true,
+        "alert": "none",
+        "tholddark": 16000,
+        "tholdoffset": 7000,
+        "ledindication": false,
+        "usertest": false,
+        "pending": []
+      },
+      "name": "Hue ambient light sensor 1",
+      "type": "ZLLLightLevel",
+      "modelid": "SML003",
+      "manufacturername": "Signify Netherlands B.V.",
+      "productname": "Hue ambient light sensor",
+      "swversion": "2.77.35",
+      "uniqueid": "00:17:88:01:0d:f6:0e:e1-02-0400",
+      "capabilities": { "certified": true, "primary": false }
+    },
+    "15": {
+      "state": { "temperature": 2011, "lastupdated": "2025-12-30T17:54:31" },
+      "swupdate": {
+        "state": "noupdates",
+        "lastinstall": "2024-12-13T13:14:21"
+      },
+      "config": {
+        "on": true,
+        "battery": 100,
+        "reachable": true,
+        "alert": "none",
+        "ledindication": false,
+        "usertest": false,
+        "pending": []
+      },
+      "name": "Hue temperature sensor 1",
+      "type": "ZLLTemperature",
+      "modelid": "SML003",
+      "manufacturername": "Signify Netherlands B.V.",
+      "productname": "Hue temperature sensor",
+      "swversion": "2.77.35",
+      "uniqueid": "00:17:88:01:0d:f6:0e:e1-02-0402",
+      "capabilities": { "certified": true, "primary": false }
+    },
+    "16": {
+      "state": { "buttonevent": 20, "lastupdated": "2025-12-29T16:06:44" },
+      "swupdate": { "state": "notupdatable", "lastinstall": null },
+      "config": { "on": true },
+      "name": "Living room side hallway switch",
+      "type": "ZGPSwitch",
+      "modelid": "FOHSWITCH",
+      "manufacturername": "PhilipsFoH",
+      "productname": "Works with Hue Switch",
+      "diversityid": "ded6468f-6b26-4a75-9582-f2b52d36a5a3",
+      "uniqueid": "00:00:00:00:01:75:0a:db-f2",
+      "capabilities": {
+        "certified": true,
+        "primary": true,
+        "inputs": [
+          {
+            "repeatintervals": [],
+            "events": [
+              { "buttonevent": 16, "eventtype": "initial_press" },
+              { "buttonevent": 20, "eventtype": "short_release" }
+            ]
+          },
+          {
+            "repeatintervals": [],
+            "events": [
+              { "buttonevent": 17, "eventtype": "initial_press" },
+              { "buttonevent": 21, "eventtype": "short_release" }
+            ]
+          },
+          {
+            "repeatintervals": [],
+            "events": [
+              { "buttonevent": 19, "eventtype": "initial_press" },
+              { "buttonevent": 23, "eventtype": "short_release" }
+            ]
+          },
+          {
+            "repeatintervals": [],
+            "events": [
+              { "buttonevent": 18, "eventtype": "initial_press" },
+              { "buttonevent": 22, "eventtype": "short_release" }
+            ]
+          }
+        ]
+      }
+    },
+    "17": {
+      "state": { "buttonevent": 21, "lastupdated": "2025-12-28T07:35:06" },
+      "swupdate": { "state": "notupdatable", "lastinstall": null },
+      "config": { "on": true },
+      "name": "Bedroom side hallway switch",
+      "type": "ZGPSwitch",
+      "modelid": "FOHSWITCH",
+      "manufacturername": "PhilipsFoH",
+      "productname": "Works with Hue Switch",
+      "diversityid": "ded6468f-6b26-4a75-9582-f2b52d36a5a3",
+      "uniqueid": "00:00:00:00:01:75:0a:7d-f2",
+      "capabilities": {
+        "certified": true,
+        "primary": true,
+        "inputs": [
+          {
+            "repeatintervals": [],
+            "events": [
+              { "buttonevent": 16, "eventtype": "initial_press" },
+              { "buttonevent": 20, "eventtype": "short_release" }
+            ]
+          },
+          {
+            "repeatintervals": [],
+            "events": [
+              { "buttonevent": 17, "eventtype": "initial_press" },
+              { "buttonevent": 21, "eventtype": "short_release" }
+            ]
+          },
+          {
+            "repeatintervals": [],
+            "events": [
+              { "buttonevent": 19, "eventtype": "initial_press" },
+              { "buttonevent": 23, "eventtype": "short_release" }
+            ]
+          },
+          {
+            "repeatintervals": [],
+            "events": [
+              { "buttonevent": 18, "eventtype": "initial_press" },
+              { "buttonevent": 22, "eventtype": "short_release" }
+            ]
+          }
+        ]
+      }
+    },
+    "18": {
+      "state": { "presence": false, "lastupdated": "2025-12-30T17:54:19" },
+      "swupdate": {
+        "state": "noupdates",
+        "lastinstall": "2025-06-06T12:33:53"
+      },
+      "config": {
+        "on": true,
+        "battery": 100,
+        "reachable": true,
+        "alert": "none",
+        "sensitivity": 4,
+        "sensitivitymax": 4,
+        "ledindication": false,
+        "usertest": false,
+        "pending": []
+      },
+      "name": "Office sensor",
+      "type": "ZLLPresence",
+      "modelid": "SML003",
+      "manufacturername": "Signify Netherlands B.V.",
+      "productname": "Hue motion sensor",
+      "swversion": "2.77.35",
+      "uniqueid": "00:17:88:01:0d:f8:91:db-02-0406",
+      "capabilities": { "certified": true, "primary": true }
+    },
+    "19": {
+      "state": {
+        "lightlevel": 0,
+        "dark": true,
+        "daylight": false,
+        "lastupdated": "2025-12-30T17:55:35"
+      },
+      "swupdate": {
+        "state": "noupdates",
+        "lastinstall": "2025-06-06T12:33:53"
+      },
+      "config": {
+        "on": true,
+        "battery": 100,
+        "reachable": true,
+        "alert": "none",
+        "tholddark": 16000,
+        "tholdoffset": 7000,
+        "ledindication": false,
+        "usertest": false,
+        "pending": []
+      },
+      "name": "Hue ambient light sensor 2",
+      "type": "ZLLLightLevel",
+      "modelid": "SML003",
+      "manufacturername": "Signify Netherlands B.V.",
+      "productname": "Hue ambient light sensor",
+      "swversion": "2.77.35",
+      "uniqueid": "00:17:88:01:0d:f8:91:db-02-0400",
+      "capabilities": { "certified": true, "primary": false }
+    },
+    "20": {
+      "state": { "temperature": 1806, "lastupdated": "2025-12-30T17:53:34" },
+      "swupdate": {
+        "state": "noupdates",
+        "lastinstall": "2025-06-06T12:33:53"
+      },
+      "config": {
+        "on": true,
+        "battery": 100,
+        "reachable": true,
+        "alert": "none",
+        "ledindication": false,
+        "usertest": false,
+        "pending": []
+      },
+      "name": "Hue temperature sensor 2",
+      "type": "ZLLTemperature",
+      "modelid": "SML003",
+      "manufacturername": "Signify Netherlands B.V.",
+      "productname": "Hue temperature sensor",
+      "swversion": "2.77.35",
+      "uniqueid": "00:17:88:01:0d:f8:91:db-02-0402",
+      "capabilities": { "certified": true, "primary": false }
+    },
+    "21": {
+      "state": { "presence": false, "lastupdated": "2025-12-30T17:54:23" },
+      "swupdate": {
+        "state": "noupdates",
+        "lastinstall": "2025-06-06T17:43:15"
+      },
+      "config": {
+        "on": true,
+        "battery": 100,
+        "reachable": true,
+        "alert": "none",
+        "sensitivity": 3,
+        "sensitivitymax": 4,
+        "ledindication": false,
+        "usertest": false,
+        "pending": []
+      },
+      "name": "Bedroom hallway sensor",
+      "type": "ZLLPresence",
+      "modelid": "SML003",
+      "manufacturername": "Signify Netherlands B.V.",
+      "productname": "Hue motion sensor",
+      "swversion": "2.77.35",
+      "uniqueid": "00:17:88:01:0d:f6:eb:03-02-0406",
+      "capabilities": { "certified": true, "primary": true }
+    },
+    "22": {
+      "state": {
+        "lightlevel": 1360,
+        "dark": true,
+        "daylight": false,
+        "lastupdated": "2025-12-30T17:55:40"
+      },
+      "swupdate": {
+        "state": "noupdates",
+        "lastinstall": "2025-06-06T17:43:15"
+      },
+      "config": {
+        "on": true,
+        "battery": 100,
+        "reachable": true,
+        "alert": "none",
+        "tholddark": 16000,
+        "tholdoffset": 7000,
+        "ledindication": false,
+        "usertest": false,
+        "pending": []
+      },
+      "name": "Hue ambient light sensor 3",
+      "type": "ZLLLightLevel",
+      "modelid": "SML003",
+      "manufacturername": "Signify Netherlands B.V.",
+      "productname": "Hue ambient light sensor",
+      "swversion": "2.77.35",
+      "uniqueid": "00:17:88:01:0d:f6:eb:03-02-0400",
+      "capabilities": { "certified": true, "primary": false }
+    },
+    "23": {
+      "state": { "temperature": 1897, "lastupdated": "2025-12-30T17:55:42" },
+      "swupdate": {
+        "state": "noupdates",
+        "lastinstall": "2025-06-06T17:43:15"
+      },
+      "config": {
+        "on": true,
+        "battery": 100,
+        "reachable": true,
+        "alert": "none",
+        "ledindication": false,
+        "usertest": false,
+        "pending": []
+      },
+      "name": "Hue temperature sensor 3",
+      "type": "ZLLTemperature",
+      "modelid": "SML003",
+      "manufacturername": "Signify Netherlands B.V.",
+      "productname": "Hue temperature sensor",
+      "swversion": "2.77.35",
+      "uniqueid": "00:17:88:01:0d:f6:eb:03-02-0402",
+      "capabilities": { "certified": true, "primary": false }
+    },
+    "24": {
+      "state": { "buttonevent": 21, "lastupdated": "2025-12-28T06:22:00" },
+      "swupdate": { "state": "notupdatable", "lastinstall": null },
+      "config": { "on": true },
+      "name": "Front door hallway LR",
+      "type": "ZGPSwitch",
+      "modelid": "FOHSWITCH",
+      "manufacturername": "PhilipsFoH",
+      "productname": "Works with Hue Switch",
+      "diversityid": "ded6468f-6b26-4a75-9582-f2b52d36a5a3",
+      "uniqueid": "00:00:00:00:01:75:0a:87-f2",
+      "capabilities": {
+        "certified": true,
+        "primary": true,
+        "inputs": [
+          {
+            "repeatintervals": [],
+            "events": [
+              { "buttonevent": 16, "eventtype": "initial_press" },
+              { "buttonevent": 20, "eventtype": "short_release" }
+            ]
+          },
+          {
+            "repeatintervals": [],
+            "events": [
+              { "buttonevent": 17, "eventtype": "initial_press" },
+              { "buttonevent": 21, "eventtype": "short_release" }
+            ]
+          },
+          {
+            "repeatintervals": [],
+            "events": [
+              { "buttonevent": 19, "eventtype": "initial_press" },
+              { "buttonevent": 23, "eventtype": "short_release" }
+            ]
+          },
+          {
+            "repeatintervals": [],
+            "events": [
+              { "buttonevent": 18, "eventtype": "initial_press" },
+              { "buttonevent": 22, "eventtype": "short_release" }
+            ]
+          }
+        ]
+      }
+    },
+    "25": {
+      "state": { "buttonevent": 16, "lastupdated": "2025-12-24T22:28:59" },
+      "swupdate": { "state": "notupdatable", "lastinstall": null },
+      "config": { "on": true },
+      "name": "Front door hallway FD",
+      "type": "ZGPSwitch",
+      "modelid": "FOHSWITCH",
+      "manufacturername": "PhilipsFoH",
+      "productname": "Works with Hue Switch",
+      "diversityid": "ded6468f-6b26-4a75-9582-f2b52d36a5a3",
+      "uniqueid": "00:00:00:00:01:75:0a:d9-f2",
+      "capabilities": {
+        "certified": true,
+        "primary": true,
+        "inputs": [
+          {
+            "repeatintervals": [],
+            "events": [
+              { "buttonevent": 16, "eventtype": "initial_press" },
+              { "buttonevent": 20, "eventtype": "short_release" }
+            ]
+          },
+          {
+            "repeatintervals": [],
+            "events": [
+              { "buttonevent": 17, "eventtype": "initial_press" },
+              { "buttonevent": 21, "eventtype": "short_release" }
+            ]
+          },
+          {
+            "repeatintervals": [],
+            "events": [
+              { "buttonevent": 19, "eventtype": "initial_press" },
+              { "buttonevent": 23, "eventtype": "short_release" }
+            ]
+          },
+          {
+            "repeatintervals": [],
+            "events": [
+              { "buttonevent": 18, "eventtype": "initial_press" },
+              { "buttonevent": 22, "eventtype": "short_release" }
+            ]
+          }
+        ]
+      }
+    },
+    "26": {
+      "state": { "presence": false, "lastupdated": "2025-12-30T15:49:32" },
+      "swupdate": {
+        "state": "noupdates",
+        "lastinstall": "2025-10-20T17:56:00"
+      },
+      "config": {
+        "on": true,
+        "battery": 100,
+        "reachable": true,
+        "alert": "none",
+        "sensitivity": 4,
+        "sensitivitymax": 4,
+        "ledindication": false,
+        "usertest": false,
+        "pending": []
+      },
+      "name": "Front door hallway 1",
+      "type": "ZLLPresence",
+      "modelid": "SML003",
+      "manufacturername": "Signify Netherlands B.V.",
+      "productname": "Hue motion sensor",
+      "swversion": "2.77.35",
+      "uniqueid": "00:17:88:01:0d:f8:a4:b9-02-0406",
+      "capabilities": { "certified": true, "primary": true }
+    },
+    "27": {
+      "state": {
+        "lightlevel": 0,
+        "dark": true,
+        "daylight": false,
+        "lastupdated": "2025-12-30T17:53:41"
+      },
+      "swupdate": {
+        "state": "noupdates",
+        "lastinstall": "2025-10-20T17:56:00"
+      },
+      "config": {
+        "on": true,
+        "battery": 100,
+        "reachable": true,
+        "alert": "none",
+        "tholddark": 16000,
+        "tholdoffset": 7000,
+        "ledindication": false,
+        "usertest": false,
+        "pending": []
+      },
+      "name": "Hue ambient light sensor 4",
+      "type": "ZLLLightLevel",
+      "modelid": "SML003",
+      "manufacturername": "Signify Netherlands B.V.",
+      "productname": "Hue ambient light sensor",
+      "swversion": "2.77.35",
+      "uniqueid": "00:17:88:01:0d:f8:a4:b9-02-0400",
+      "capabilities": { "certified": true, "primary": false }
+    },
+    "28": {
+      "state": { "temperature": 1904, "lastupdated": "2025-12-30T17:52:58" },
+      "swupdate": {
+        "state": "noupdates",
+        "lastinstall": "2025-10-20T17:56:00"
+      },
+      "config": {
+        "on": true,
+        "battery": 100,
+        "reachable": true,
+        "alert": "none",
+        "ledindication": false,
+        "usertest": false,
+        "pending": []
+      },
+      "name": "Hue temperature sensor 4",
+      "type": "ZLLTemperature",
+      "modelid": "SML003",
+      "manufacturername": "Signify Netherlands B.V.",
+      "productname": "Hue temperature sensor",
+      "swversion": "2.77.35",
+      "uniqueid": "00:17:88:01:0d:f8:a4:b9-02-0402",
+      "capabilities": { "certified": true, "primary": false }
+    },
+    "29": {
+      "state": { "presence": false, "lastupdated": "2025-12-30T15:49:29" },
+      "swupdate": {
+        "state": "noupdates",
+        "lastinstall": "2025-10-20T17:56:24"
+      },
+      "config": {
+        "on": true,
+        "battery": 100,
+        "reachable": true,
+        "alert": "lselect",
+        "sensitivity": 2,
+        "sensitivitymax": 4,
+        "ledindication": false,
+        "usertest": false,
+        "pending": []
+      },
+      "name": "Front door hallway 2",
+      "type": "ZLLPresence",
+      "modelid": "SML003",
+      "manufacturername": "Signify Netherlands B.V.",
+      "productname": "Hue motion sensor",
+      "swversion": "2.77.35",
+      "uniqueid": "00:17:88:01:0d:f8:aa:2d-02-0406",
+      "capabilities": { "certified": true, "primary": true }
+    },
+    "30": {
+      "state": {
+        "lightlevel": 0,
+        "dark": true,
+        "daylight": false,
+        "lastupdated": "2025-12-30T17:54:40"
+      },
+      "swupdate": {
+        "state": "noupdates",
+        "lastinstall": "2025-10-20T17:56:24"
+      },
+      "config": {
+        "on": true,
+        "battery": 100,
+        "reachable": true,
+        "alert": "none",
+        "tholddark": 16000,
+        "tholdoffset": 7000,
+        "ledindication": false,
+        "usertest": false,
+        "pending": []
+      },
+      "name": "Hue ambient light sensor 5",
+      "type": "ZLLLightLevel",
+      "modelid": "SML003",
+      "manufacturername": "Signify Netherlands B.V.",
+      "productname": "Hue ambient light sensor",
+      "swversion": "2.77.35",
+      "uniqueid": "00:17:88:01:0d:f8:aa:2d-02-0400",
+      "capabilities": { "certified": true, "primary": false }
+    },
+    "31": {
+      "state": { "temperature": 1771, "lastupdated": "2025-12-30T17:52:11" },
+      "swupdate": {
+        "state": "noupdates",
+        "lastinstall": "2025-10-20T17:56:24"
+      },
+      "config": {
+        "on": true,
+        "battery": 100,
+        "reachable": true,
+        "alert": "none",
+        "ledindication": false,
+        "usertest": false,
+        "pending": []
+      },
+      "name": "Hue temperature sensor 5",
+      "type": "ZLLTemperature",
+      "modelid": "SML003",
+      "manufacturername": "Signify Netherlands B.V.",
+      "productname": "Hue temperature sensor",
+      "swversion": "2.77.35",
+      "uniqueid": "00:17:88:01:0d:f8:aa:2d-02-0402",
+      "capabilities": { "certified": true, "primary": false }
+    }
+  },
+  "resourcelinks": {}
+}

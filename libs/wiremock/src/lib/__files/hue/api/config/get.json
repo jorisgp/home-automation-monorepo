@@ -1,4 +1,12 @@
 {
-  "configuration": {},
-  "users": {}
+  "name": "Office",
+  "datastoreversion": "180",
+  "swversion": "1974142030",
+  "apiversion": "1.74.0",
+  "mac": "ec:b5:fa:a5:e3:32",
+  "bridgeid": "ECB5FAFFFEA5E332",
+  "factorynew": false,
+  "replacesbridgeid": null,
+  "modelid": "BSB002",
+  "starterkitid": ""
 }

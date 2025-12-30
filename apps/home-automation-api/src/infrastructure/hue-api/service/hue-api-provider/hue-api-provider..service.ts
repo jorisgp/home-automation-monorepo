@@ -40,11 +40,15 @@ export class HueApiProviderService {
 
   async _createApi(ip: string, username?: string) {
     const env = process.env.NODE_ENV || 'dev';
-    if (env === 'dev') {
+    if (env === 'dev' && false) {
       return await hueApiService.api
         .createInsecureLocal(this.MOCK_ID, this.MOCK_PORT)
         .connect(username);
     }
-    return await hueApiService.api.createLocal(ip).connect(username);
+    return await hueApiService.api.createInsecureLocal(ip).connect(username);
   }
 }
+
+
+JavaScript Object Notation: application/json4333	212.608529	192.168.1.179	192.168.1.172	HTTP/JSON	60	HTTP/1.1 200 OK , JSON (application/json)
+4333	212.608529	192.168.1.179	192.168.1.172	HTTP/JSON	60	HTTP/1.1 200 OK , JSON (application/json)
