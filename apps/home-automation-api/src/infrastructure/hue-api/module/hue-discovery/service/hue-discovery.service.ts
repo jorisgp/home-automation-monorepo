@@ -4,6 +4,7 @@ import { plainToClass } from 'class-transformer';
 import * as hueApiService from 'node-hue-api';
 
 import { DiscoveryType } from 'apps/home-automation-api/src/infrastructure/hue-api/module/hue-discovery/enum/discovery-type.enum';
+import { HueApiProviderService } from '../../../service/hue-api-provider/hue-api-provider..service';
 import { ReadAuthorizedBridgeDto } from '../dto/read-authorized-bridge.dto';
 import { ReadBridgeUserDto } from '../dto/read-bridge-user.dto';
 import { ReadBridgeDto } from '../dto/read-bridge.dto';
@@ -16,6 +17,8 @@ export class HueDiscoveryService {
   private readonly APP_NAME = 'home-automation-api';
   private readonly DEVICE_NAME = 'home-automation-api-device';
 
+  constructor(private hueProviderService: HueApiProviderService) {}
+
   async getBridgesAndCreateUser(
     discoveryType = DiscoveryType.MDNS
   ): Promise<ReadAuthorizedBridgeDto[]> {
@@ -24,6 +27,11 @@ export class HueDiscoveryService {
       this.getBridgesAndCreateUser.name
     );
     const readBridgeDtoList = await this.getBridges(discoveryType);
+
+    this.logger.debug(
+      `readBridgeDtoList: ${JSON.stringify(readBridgeDtoList)}`,
+      this.getBridgesAndCreateUser.name
+    );
 
     const result = await Promise.all(
       readBridgeDtoList?.map(async (readBridgeDto) => {
@@ -68,10 +76,8 @@ export class HueDiscoveryService {
 
   private async _createUser(ipAddress: string): Promise<ReadBridgeUserDto> {
     this.logger.debug(`ipAddress: ${ipAddress}`, this._createUser.name);
-    const unauthenticatedApi = await hueApiService.api
-      .createLocal(ipAddress)
-      .connect();
-
+    const unauthenticatedApi =
+      await this.hueProviderService.getUnAuthenticatedApi(ipAddress);
     let createdUser;
     try {
       createdUser = await unauthenticatedApi.users.createUser(this.APP_NAME);
@@ -84,9 +90,10 @@ export class HueDiscoveryService {
         this._createUser.name
       );
 
-      const authenticatedApi = await hueApiService.api
-        .createLocal(ipAddress)
-        .connect(createdUser.username);
+      const authenticatedApi = await this.hueProviderService.getApi(
+        ipAddress,
+        createdUser.username
+      );
 
       const bridgeConfig =
         await authenticatedApi.configuration.getConfiguration();

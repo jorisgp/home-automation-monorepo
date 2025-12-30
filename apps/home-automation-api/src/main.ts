@@ -1,3 +1,5 @@
+import './patch-fetch';
+
 import { Logger } from '@nestjs/common';
 import { NestFactory } from '@nestjs/core';
 import { useContainer } from 'class-validator';
@@ -7,7 +9,7 @@ import { AppModule } from './app/app.module';
 
 async function bootstrap() {
   const GLOBAL_PREFIX = 'api';
-  const PORT_NUMBER = 8080;
+  const PORT_NUMBER = 3000;
   const log = new Logger('bootstrap');
 
   const app = await NestFactory.create(AppModule, { cors: true });
@@ -24,10 +26,10 @@ async function bootstrap() {
   SwaggerModule.setup('api', app, document);
   useContainer(app.select(AppModule), { fallbackOnErrors: true });
 
-  log.verbose(`🚀 Application is running on: http://localhost:${PORT_NUMBER}/${GLOBAL_PREFIX}`);
+  log.verbose(
+    `🚀 Application is running on: http://localhost:${PORT_NUMBER}/${GLOBAL_PREFIX}`
+  );
   await app.listen(PORT_NUMBER);
 }
 
 bootstrap();
-
-

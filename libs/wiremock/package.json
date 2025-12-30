@@ -1,0 +1,6 @@
+{
+  "name": "@home-automation-monorepo/wiremock",
+  "version": "0.0.1",
+  "dependencies": {},
+  "private": true
+}

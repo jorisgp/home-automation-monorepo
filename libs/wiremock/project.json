@@ -1,0 +1,20 @@
+{
+  "name": "wiremock",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "libs/wiremock/src",
+  "projectType": "library",
+  "tags": [],
+  "targets": {
+    "build": {
+      "command": "docker build -f libs/wiremock/Dockerfile -t ha-wiremock ."
+    },
+    "serve": {
+      "dependsOn": ["build"],
+      "command": "docker run --rm -p 8080:8080 ha-wiremock"
+    },
+    "serve:hotreload": {
+      "dependsOn": ["build"],
+      "command": "node libs/wiremock/start-wiremock.js"
+    }
+  }
+}

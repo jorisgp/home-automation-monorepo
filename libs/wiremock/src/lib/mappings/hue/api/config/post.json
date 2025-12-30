@@ -1,0 +1,9 @@
+{
+  "request": {
+    "urlPath": "/api/",
+    "method": "POST"
+  },
+  "response": {
+    "status": 201
+  }
+}

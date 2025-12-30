@@ -1,6 +1,6 @@
 import { Injectable } from '@nestjs/common';
 import { HaaLogger } from 'apps/home-automation-api/src/common/logger/haa-logger';
-import { toPlainObject } from 'apps/home-automation-api/src/common/utils/haa.utiles';
+import { toPlainObject } from 'apps/home-automation-api/src/common/utils/haa.utils';
 import * as hueApiService from 'node-hue-api';
 import { AuthenticationDto } from '../../dto/authentication.dto';
 import { ReadLightDto } from '../../dto/light/read-light.dto';

@@ -1,0 +1,9 @@
+{
+  "request": {
+    "urlPath": "/api/config",
+    "method": "GET"
+  },
+  "response": {
+    "status": 200
+  }
+}
