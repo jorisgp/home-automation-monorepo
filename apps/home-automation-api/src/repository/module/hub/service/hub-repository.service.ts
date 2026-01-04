@@ -25,7 +25,7 @@ export class HubRepositoryService {
     return newHubEntity.save();
   }
 
-  async findAll(): Promise<HubDocument[]> {
+  async findAll(): Promise<HubEntity[]> {
     this.logger.debug(``, this.findAll.name);
     return this.hubModel.find();
   }

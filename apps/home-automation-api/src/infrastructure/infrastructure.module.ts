@@ -1,9 +1,8 @@
-
-import { Module } from "@nestjs/common";
-import { HueApiModule } from "./hue-api/hue-api.module";
+import { Module } from '@nestjs/common';
+import { HueApiModule } from './hue/hue-api.module';
 
 @Module({
   imports: [HueApiModule],
-  exports: [HueApiModule]
+  exports: [HueApiModule],
 })
 export class InfrastructureModule {}

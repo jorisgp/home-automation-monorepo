@@ -1,9 +1,11 @@
 import { Injectable } from '@nestjs/common';
 import { HaaLogger } from 'apps/home-automation-api/src/common/logger/haa-logger';
-import { HueService } from 'apps/home-automation-api/src/infrastructure/hue-api/service/hue/hue.service';
-import { LightRepositoryService } from 'apps/home-automation-api/src/repository';
+import { HueLightService } from 'apps/home-automation-api/src/infrastructure/hue/module/hue-light/service/hue-light.service';
+import {
+  HubRepositoryService,
+  LightRepositoryService,
+} from 'apps/home-automation-api/src/repository';
 import { ObjectId } from 'mongodb';
-import { HubBoMapper } from '../../hub/mapper/hub-bo.mapper';
 import { LightStateBo } from '../../state/bo/state.bo';
 import { LightBo } from '../bo/light.bo';
 import { LightEntityMapper } from '../mapper/light-bo.mapper';
@@ -13,17 +15,21 @@ export class LightDomainService {
   private readonly logger = new HaaLogger(LightDomainService.name);
 
   constructor(
-    private readonly hueService: HueService,
+    private readonly hueLightService: HueLightService,
+    private readonly hubRepositoryService: HubRepositoryService,
     private readonly lightRepisoryService: LightRepositoryService
   ) {}
 
   async getAllLights() {
     this.logger.debug(``, this.getAllLights.name);
-    const allHubs = []; //await this.hubRpositoryService.findAll();
+    const allHubs = await this.hubRepositoryService.findAll();
 
     const promiseLightResult = allHubs.map(
-      async (hub) => await this.hueService.getLights(HubBoMapper.toBo(hub))
+      async (hub) =>
+        await this.hueLightService.listLights(hub.ip, hub.user.username)
     );
+
+    this.logger.log(promiseLightResult);
 
     const lightResult = await Promise.all(promiseLightResult);
     const flatLightResult = lightResult.flat();

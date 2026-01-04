@@ -1,6 +1,6 @@
 import { Injectable } from '@nestjs/common';
 import { HaaLogger } from 'apps/home-automation-api/src/common/logger/haa-logger';
-import { HueDiscoveryService } from 'apps/home-automation-api/src/infrastructure/hue-api/module/hue-discovery';
+import { HueDiscoveryService } from 'apps/home-automation-api/src/infrastructure/hue/module/hue-discovery';
 import { HubRepositoryService } from 'apps/home-automation-api/src/repository/module/hub/service/hub-repository.service';
 import { Types } from 'mongoose';
 import { HubBo } from '../bo/hub.bo';

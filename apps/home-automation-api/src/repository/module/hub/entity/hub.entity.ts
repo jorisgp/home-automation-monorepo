@@ -27,6 +27,9 @@ export class HubEntity extends BaseEntity implements StatusEntity {
 
   @Prop({ required: true, default: () => new Date() })
   lastSeen: Date;
+
+  @Prop()
+  softwareVersion: string;
 }
 
 export type PartialHubEntity = Partial<HubEntity>;

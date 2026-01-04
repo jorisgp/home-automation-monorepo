@@ -16,6 +16,8 @@ export class HubBoMapper {
     entity.name = hubBo.name;
     entity.modelId = hubBo.modelId;
     entity.uniqueId = hubBo.uniqueId;
+    entity.softwareVersion = hubBo.softwareVersion;
+    entity.lastSeen = hubBo.lastSeen;
     entity.user = HubBoMapper.toUserEntity(hubBo.user);
     return entity;
   }
@@ -42,6 +44,7 @@ export class HubBoMapper {
     bo.name = entity.name;
     bo.modelId = entity.modelId;
     bo.uniqueId = entity.uniqueId;
+    bo.softwareVersion = entity.softwareVersion;
     bo.lastSeen = entity.lastSeen;
     bo.user = HubBoMapper.toUserBo(entity.user);
     return bo;

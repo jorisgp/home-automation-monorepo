@@ -15,9 +15,15 @@ export class LightRestService {
     return LightRestMapper.toDto(lightBo);
   }
 
+  // async findAll() {
+  //   this.logger.log(``, this.find.name);
+  //   const lightBoList = await this.lightDomainService.findAll();
+  //   return lightBoList.map(LightRestMapper.toDto);
+  // }
+
   async findAll() {
     this.logger.log(``, this.find.name);
-    const lightBoList = await this.lightDomainService.findAll();
-    return lightBoList.map(LightRestMapper.toDto);
+    const lightBoList = await this.lightDomainService.getAllLights();
+    return;
   }
 }

@@ -7,5 +7,6 @@ export class HubBo {
   name: string;
   ipAddress: string;
   user: HubUserBo;
+  softwareVersion: string;
   lastSeen: Date;
 }
